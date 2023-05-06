@@ -2,7 +2,7 @@
 
 ![Espécies-de-Trabalhadores](https://user-images.githubusercontent.com/128190811/236585355-656daf86-aea6-4a5a-8e14-c60045759e46.jpg)
 
-inicio do sistema auxiliar de RH
+Inicio do sistema auxiliar de RH
 ===============================
 
   Esse sistema foi voltado para atender tanto as necessidades do empregador, como do empregado. Calculando de maneira eficiente descontos e adicionais que veem ser somados ao salario do trabalhador. já para a instituição, o programa calcula diversos adicionais e descontos que possam recair sobre o sálario final do funcionario, como por exemplo as horas extras trabalhadas no mes, com esse sistema integrado a margem de erro é reduzida,pois um software que calcula o percentual a ser pago ao trabalhador. Calcula tambem o extrato do funcionario e consta com um sistema de banco de dados para guarda dados do trabalhador e facilitar a vida do empregador.
@@ -12,7 +12,7 @@ inicio do sistema auxiliar de RH
   
   
   
-**abaixo segue uma tabela especificando as funcões que constam no programa sistema do RH:**
+**Abaixo segue uma tabela especificando as funcões que constam no programa sistema do RH:**
 
 | FUNÇÕES                   | EXEMPLO 
 | --------------------------|:----------------------------------------------------------------------------------------------------------------------------:|
@@ -91,6 +91,47 @@ inicio do sistema auxiliar de RH
 ************************************
 
 - Pergunta os dados dos funcionarios como: email, CEP, nome etc... e em seguida os guarda no arquivo "banco de dados.txt" 
+
+#### *REFERÊNCIAS* ####
+************************************
+
+[Calculo INSS](https://meutudo.com.br/blog/calculo-inss/)
+
+[Calculo INSS](https://www.coalize.com.br/calculadora-de-inss-resultado)
+
+[Calculo IRRF](https://www.calcule.net/trabalhista/calculo-imposto-de-renda-irrf/#topnav)
+
+[Calculo MULTA FGTS](https://www.pontotel.com.br/multa-fgts/)
+
+https://www.youtube.com/watch?v=Jjo0PvauNJg
+
+[Calculo ADICIONAL PERICULOSIDADE](https://folhacerta.com/o-que-e-adicional-de-periculosidade-e-como-calcular/#:~:text=Na%20pr%C3%A1tica%2C%20se%20um%20colaborador,salarial%2C%20n%C3%A3o%20de%20car%C3%A1ter%20indenizat%C3%B3rio.)
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+[Calculo FERIAS](https://www.idinheiro.com.br/calculadoras/calculadora-de-ferias/)
+
+[Calculo INSS](https://nicoliadvogados.adv.br/previdenciario/inss-e-aplicado-sobre-horas-
+extras/#:~:text=Em%20suma%2C%20deve%20ser%20feito,STJ%20%C3%A9%20favor%C
+3%A1vel%20aos%20segurados)
+
+[Calculo INSS](https://ibdec.net/geral/inss-instituto-nacional-da-seguridade-
+social#:~:text=O%20desconto%20do%20INSS%20incide,em%20lei%20pela%20previd%C3
+%AAncia%20social.)
+
+[Calculo IRRF](https://economia.uol.com.br/imposto-de-renda/noticias/redacao/2023/04/06/tabela-do-
+imposto-de-renda-2023-veja-faixas-aliquotas-e-como-calcular.htm)
+
+[Calculo irrf](https://www.calcule.net/trabalhista/calculo-imposto-de-renda-irrf/#topnav)
+
+https://www.calcule.net/trabalhista/calculo-de-inss/
+
+[Calculo FGTS](https://tangerino.com.br/blog/calculo-do-fgts-passo-a-passo/#:~:text=FGTS%20em%202022%3F-,O%20que%20%C3%A9%20o%20C%C3%A1lculo%20do%20FGTS%3F,a%20al%C3%AD
+quota%20%C3%A9%20de%202%25.)
+
+[Calculo FGTS](https://calculomania.com/calculo-de-adicional-noturno/)
+
+[Calculos GERAIS](https://www.calcule.net/)
 
 
 
