@@ -12,7 +12,7 @@ inicio do sistema auxiliar de RH
   
   
   
-**abaixo segue uma tabela especificando as funcões que cosntam no programa xxx:**
+**abaixo segue uma tabela especificando as funcões que constam no programa sistema do RH:**
 
 | FUNÇÕES                   | EXEMPLO 
 | --------------------------|:----------------------------------------------------------------------------------------------------------------------------:|
