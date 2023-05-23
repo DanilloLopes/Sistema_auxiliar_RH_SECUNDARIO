@@ -1,5 +1,5 @@
-﻿using RH_Manager.Windows.Simuladores;
-using RH_Manager.Windows.Cadastros;
+﻿using iRh.Windows.Cadastros;
+using iRh.Windows.Simuladores;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RH_Manager.Windows
+namespace iRh.Windows
 {
     public partial class PrincipalMdi : Form
     {
@@ -19,77 +19,81 @@ namespace RH_Manager.Windows
             InitializeComponent();
         }
 
-        private void descontoDeINSSToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            
+        }
+        private void menuDescontoInss_Click(object sender, EventArgs e)
         {
             var form = new frmDescontoInss();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void descontoDeIRPFToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuDescontoIrrf_Click(object sender, EventArgs e)
         {
-            var form = new frmDescontoIrpf();
+            var form = new frmDescontoIrrf();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void benefícioDeAdicionalNoturnoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuBeneficioAdicionalNuturno_Click(object sender, EventArgs e)
         {
             var form = new frmBeneficioAdicionalNoturno();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void benefícioDeDepositoFGTSToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuBeneficioFgts_Click(object sender, EventArgs e)
         {
             var form = new frmBeneficioFgts();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void benefícioDeFériasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuBeneficioFerias_Click(object sender, EventArgs e)
         {
             var form = new frmBeneficioFerias();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void benefícioDeHoraExtraToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuBeneficioHoraExtra_Click(object sender, EventArgs e)
         {
             var form = new frmBeneficioHoraExtra();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void benefícioDePericulosidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuBeneficioPericulosidade_Click(object sender, EventArgs e)
         {
             var form = new frmBeneficioPericulosidade();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void benefícioDePISToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuBeneficioPis_Click(object sender, EventArgs e)
         {
             var form = new frmBeneficioPis();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void benefícioDeSeguroDesempregoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuBeneficioSeguroDesemprego_Click(object sender, EventArgs e)
         {
             var form = new frmBeneficioSeguroDesemprego();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void benefícioDeValeTransporteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuBeneficioValeTransporte_Click(object sender, EventArgs e)
         {
             var form = new frmBeneficioValeTransporte();
             form.MdiParent = this;
             form.Show();
         }
 
-        private void funcionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuCadastroFuncionario_Click(object sender, EventArgs e)
         {
             var form = new frmFuncionario();
             form.MdiParent = this;

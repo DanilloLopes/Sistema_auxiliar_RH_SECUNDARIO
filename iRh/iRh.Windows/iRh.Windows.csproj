@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5DFEC3B8-36A4-4ADB-9BA1-B4C7FB3CA145}</ProjectGuid>
+    <ProjectGuid>{26733F42-EEC6-44C0-8BFD-34E3101E4A7C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>iRh.Windows</RootNamespace>
     <AssemblyName>iRh.Windows</AssemblyName>
@@ -52,6 +52,7 @@
     <Compile Include="Cadastros\frmFuncionario.Designer.cs">
       <DependentUpon>frmFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\Calculadora.cs" />
     <Compile Include="PrincipalMdi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,8 +64,62 @@
     <Compile Include="Simuladores\frmBeneficioAdicionalNoturno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Simuladores\frmBeneficioAdicionalNoturno.designer.cs">
+    <Compile Include="Simuladores\frmBeneficioAdicionalNoturno.Designer.cs">
       <DependentUpon>frmBeneficioAdicionalNoturno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioFerias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioFerias.Designer.cs">
+      <DependentUpon>frmBeneficioFerias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioFgts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioFgts.Designer.cs">
+      <DependentUpon>frmBeneficioFgts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioHoraExtra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioHoraExtra.Designer.cs">
+      <DependentUpon>frmBeneficioHoraExtra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioPericulosidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioPericulosidade.Designer.cs">
+      <DependentUpon>frmBeneficioPericulosidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioPis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioPis.Designer.cs">
+      <DependentUpon>frmBeneficioPis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioSeguroDesemprego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioSeguroDesemprego.Designer.cs">
+      <DependentUpon>frmBeneficioSeguroDesemprego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioValeTransporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioValeTransporte.Designer.cs">
+      <DependentUpon>frmBeneficioValeTransporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simuladores\frmDescontoInss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmDescontoInss.Designer.cs">
+      <DependentUpon>frmDescontoInss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simuladores\frmDescontoIrrf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmDescontoIrrf.Designer.cs">
+      <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="PrincipalMdi.resx">
       <DependentUpon>PrincipalMdi.cs</DependentUpon>
@@ -78,6 +133,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Simuladores\frmDescontoInss.resx">
+      <DependentUpon>frmDescontoInss.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
