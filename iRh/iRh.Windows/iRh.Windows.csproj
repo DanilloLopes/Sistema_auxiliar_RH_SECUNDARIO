@@ -63,62 +63,8 @@
     <Compile Include="Simuladores\frmBeneficioAdicionalNoturno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Simuladores\frmBeneficioAdicionalNoturno.Designer.cs">
+    <Compile Include="Simuladores\frmBeneficioAdicionalNoturno.designer.cs">
       <DependentUpon>frmBeneficioAdicionalNoturno.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioFerias.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioFerias.Designer.cs">
-      <DependentUpon>frmBeneficioFerias.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioFgts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioFgts.Designer.cs">
-      <DependentUpon>frmBeneficioFgts.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioHoraExtra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioHoraExtra.Designer.cs">
-      <DependentUpon>frmBeneficioHoraExtra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioPericulosidade.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioPericulosidade.Designer.cs">
-      <DependentUpon>frmBeneficioPericulosidade.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioPis.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioPis.Designer.cs">
-      <DependentUpon>frmBeneficioPis.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioSeguroDesemprego.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioSeguroDesemprego.Designer.cs">
-      <DependentUpon>frmBeneficioSeguroDesemprego.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioValeTransporte.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simuladores\frmBeneficioValeTransporte.Designer.cs">
-      <DependentUpon>frmBeneficioValeTransporte.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simuladores\frmDescontoInss.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simuladores\frmDescontoInss.Designer.cs">
-      <DependentUpon>frmDescontoInss.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Simuladores\frmDescontoIrrf.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Simuladores\frmDescontoIrrf.Designer.cs">
-      <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="PrincipalMdi.resx">
       <DependentUpon>PrincipalMdi.cs</DependentUpon>

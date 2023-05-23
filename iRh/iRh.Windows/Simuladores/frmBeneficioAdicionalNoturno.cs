@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace iRh.Windows.Simuladores
+namespace RH_Manager.Windows.Simuladores
 {
     public partial class frmBeneficioAdicionalNoturno : Form
     {

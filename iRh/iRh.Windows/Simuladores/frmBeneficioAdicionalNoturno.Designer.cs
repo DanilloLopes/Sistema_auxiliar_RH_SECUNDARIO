@@ -1,4 +1,4 @@
-﻿namespace iRh.Windows.Simuladores
+﻿namespace RH_Manager.Windows.Simuladores
 {
     partial class frmBeneficioAdicionalNoturno
     {
