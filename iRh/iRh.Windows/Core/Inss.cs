@@ -20,7 +20,7 @@
                 valorInss = (0.09 * (salario - Faixa01)) + ( CalculaFaixa1(salario));
             }else if(salario <= Faixa03)
             {
-                valorInss = (0.12 * (salario - Faixa02)) + ((salario - Faixa02) + CalculaFaixa1(salario) +  CalculaFaixa2(salario));
+                valorInss = (0.12 * (salario - Faixa02)) + (CalculaFaixa1(salario) +  CalculaFaixa2(salario));
             }else if(salario <= Faixa04)
             {
                 valorInss =( 0.14 * (salario - Faixa03) )+    CalculaFaixa1(salario) +  CalculaFaixa2(salario) +  CalculaFaixa3(salario);

@@ -18,7 +18,6 @@ namespace iRh.Windows.Simuladores
             {
                 MessageBox.Show("Informe seu salário base", "Error", 
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
                 txtSalario.Focus();
                 return;
             }
@@ -27,8 +26,8 @@ namespace iRh.Windows.Simuladores
             {
                 var salario = double.Parse(txtSalario.Text);
                 var descontoInss = Inss.Calcula(salario);
-                lblResultado.Text =  descontoInss.ToString("C");
-                panelResultado.Visible = true;
+                lblResultadoInss.Text =  descontoInss.ToString("C");
+                panelResultadoInss.Visible = true;
             }
             catch (Exception)
             {

@@ -68,7 +68,7 @@
             // menuCadastroFuncionario
             // 
             this.menuCadastroFuncionario.Name = "menuCadastroFuncionario";
-            this.menuCadastroFuncionario.Size = new System.Drawing.Size(180, 22);
+            this.menuCadastroFuncionario.Size = new System.Drawing.Size(142, 22);
             this.menuCadastroFuncionario.Text = "Funcionarios";
             this.menuCadastroFuncionario.Click += new System.EventHandler(this.menuCadastroFuncionario_Click);
             // 
@@ -101,7 +101,7 @@
             // 
             this.menuDescontoIrrf.Name = "menuDescontoIrrf";
             this.menuDescontoIrrf.Size = new System.Drawing.Size(249, 22);
-            this.menuDescontoIrrf.Text = "Desconto de IRPF";
+            this.menuDescontoIrrf.Text = "Desconto de IRRF";
             this.menuDescontoIrrf.Click += new System.EventHandler(this.menuDescontoIrrf_Click);
             // 
             // toolStripSeparator1
