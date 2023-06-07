@@ -123,6 +123,9 @@
     <Compile Include="Simuladores\frmDescontoIrrf.Designer.cs">
       <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cadastros\frmFuncionario.resx">
+      <DependentUpon>frmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PrincipalMdi.resx">
       <DependentUpon>PrincipalMdi.cs</DependentUpon>
     </EmbeddedResource>
