@@ -12,11 +12,10 @@
             const double ParceDeduzidaFaixa02 = 370.40;
             const double ParceDeduzidaFaixa03 = 651.73;
             const double ParceDeduzidaFaixa04 = 884.96;
-            const double DescontpoSimplificado = 528.0;
 
             double valorIrrf = 0;
             double inss = Inss.Calcula(salario);
-            double salarioComDescontos = salario - (inss + DescontpoSimplificado);
+            double salarioComDescontos = salario - inss ;
             if (salarioComDescontos <= Faixa01)
             {
                 valorIrrf = 0.0;
