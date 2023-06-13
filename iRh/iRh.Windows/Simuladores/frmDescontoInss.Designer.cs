@@ -69,7 +69,7 @@
             // 
             // panelResultadoInss
             // 
-            this.panelResultadoInss.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelResultadoInss.BackColor = System.Drawing.Color.Transparent;
             this.panelResultadoInss.Controls.Add(this.lblResultadoInss);
             this.panelResultadoInss.Location = new System.Drawing.Point(17, 162);
             this.panelResultadoInss.Name = "panelResultadoInss";

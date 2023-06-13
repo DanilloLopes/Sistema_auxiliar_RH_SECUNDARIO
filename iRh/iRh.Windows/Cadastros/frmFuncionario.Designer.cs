@@ -28,136 +28,300 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmbGenero = new System.Windows.Forms.ComboBox();
-            this.rbTemFilhosSim = new System.Windows.Forms.RadioButton();
-            this.rbTemFilhosNão = new System.Windows.Forms.RadioButton();
-            this.lblTemFilhos = new System.Windows.Forms.Label();
-            this.txtFilhoNome = new System.Windows.Forms.TextBox();
-            this.lblFilhoNome = new System.Windows.Forms.Label();
-            this.lblFilhoDataNascimento = new System.Windows.Forms.Label();
-            this.lblIdade = new System.Windows.Forms.Label();
-            this.panelExibeDadosFilhos = new System.Windows.Forms.Panel();
-            this.txtFilhoDataNascimento = new System.Windows.Forms.MaskedTextBox();
-            this.panelExibeDadosFilhos.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFuncionario));
+            this.lblNomeCompleto = new System.Windows.Forms.Label();
+            this.txtNomeCompleto = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.lblCpf = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.lblDataNascimento = new System.Windows.Forms.Label();
+            this.txtCep = new System.Windows.Forms.TextBox();
+            this.lblCep = new System.Windows.Forms.Label();
+            this.bntPesquisar = new System.Windows.Forms.Button();
+            this.txtLogradouro = new System.Windows.Forms.TextBox();
+            this.lblLogradouro = new System.Windows.Forms.Label();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.lblBairro = new System.Windows.Forms.Label();
+            this.lblUf = new System.Windows.Forms.Label();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.txtDdd = new System.Windows.Forms.TextBox();
+            this.lblDdd = new System.Windows.Forms.Label();
+            this.cmbUf = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblWhatsapp = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // cmbGenero
+            // lblNomeCompleto
             // 
-            this.cmbGenero.FormattingEnabled = true;
-            this.cmbGenero.Items.AddRange(new object[] {
-            "Feminino",
-            "Masculino",
-            "Neutro",
-            "Prefiro Não Dizer",
-            "Outros"});
-            this.cmbGenero.Location = new System.Drawing.Point(39, 42);
-            this.cmbGenero.Name = "cmbGenero";
-            this.cmbGenero.Size = new System.Drawing.Size(186, 21);
-            this.cmbGenero.TabIndex = 0;
+            this.lblNomeCompleto.AutoSize = true;
+            this.lblNomeCompleto.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeCompleto.Location = new System.Drawing.Point(28, 21);
+            this.lblNomeCompleto.Name = "lblNomeCompleto";
+            this.lblNomeCompleto.Size = new System.Drawing.Size(117, 17);
+            this.lblNomeCompleto.TabIndex = 0;
+            this.lblNomeCompleto.Text = "NOME COMPLETO";
             // 
-            // rbTemFilhosSim
+            // txtNomeCompleto
             // 
-            this.rbTemFilhosSim.AutoSize = true;
-            this.rbTemFilhosSim.Location = new System.Drawing.Point(42, 111);
-            this.rbTemFilhosSim.Name = "rbTemFilhosSim";
-            this.rbTemFilhosSim.Size = new System.Drawing.Size(42, 17);
-            this.rbTemFilhosSim.TabIndex = 1;
-            this.rbTemFilhosSim.Text = "Sim";
-            this.rbTemFilhosSim.UseVisualStyleBackColor = true;
-            this.rbTemFilhosSim.CheckedChanged += new System.EventHandler(this.rbTemFilhosSim_CheckedChanged);
+            this.txtNomeCompleto.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeCompleto.Location = new System.Drawing.Point(31, 46);
+            this.txtNomeCompleto.Name = "txtNomeCompleto";
+            this.txtNomeCompleto.Size = new System.Drawing.Size(260, 25);
+            this.txtNomeCompleto.TabIndex = 1;
             // 
-            // rbTemFilhosNão
+            // txtCpf
             // 
-            this.rbTemFilhosNão.AutoSize = true;
-            this.rbTemFilhosNão.Location = new System.Drawing.Point(87, 111);
-            this.rbTemFilhosNão.Name = "rbTemFilhosNão";
-            this.rbTemFilhosNão.Size = new System.Drawing.Size(45, 17);
-            this.rbTemFilhosNão.TabIndex = 2;
-            this.rbTemFilhosNão.Text = "Não";
-            this.rbTemFilhosNão.UseVisualStyleBackColor = true;
-            this.rbTemFilhosNão.CheckedChanged += new System.EventHandler(this.rbTemFilhosNão_CheckedChanged);
+            this.txtCpf.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpf.Location = new System.Drawing.Point(309, 46);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(138, 25);
+            this.txtCpf.TabIndex = 3;
             // 
-            // lblTemFilhos
+            // lblCpf
             // 
-            this.lblTemFilhos.AutoSize = true;
-            this.lblTemFilhos.Location = new System.Drawing.Point(39, 95);
-            this.lblTemFilhos.Name = "lblTemFilhos";
-            this.lblTemFilhos.Size = new System.Drawing.Size(85, 13);
-            this.lblTemFilhos.TabIndex = 3;
-            this.lblTemFilhos.Text = "Você tem filhos?";
+            this.lblCpf.AutoSize = true;
+            this.lblCpf.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCpf.Location = new System.Drawing.Point(306, 21);
+            this.lblCpf.Name = "lblCpf";
+            this.lblCpf.Size = new System.Drawing.Size(29, 17);
+            this.lblCpf.TabIndex = 2;
+            this.lblCpf.Text = "CPF";
             // 
-            // txtFilhoNome
+            // maskedTextBox1
             // 
-            this.txtFilhoNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtFilhoNome.Location = new System.Drawing.Point(0, 25);
-            this.txtFilhoNome.Name = "txtFilhoNome";
-            this.txtFilhoNome.Size = new System.Drawing.Size(100, 20);
-            this.txtFilhoNome.TabIndex = 4;
+            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskedTextBox1.Location = new System.Drawing.Point(464, 46);
+            this.maskedTextBox1.Mask = "00/00/0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(158, 25);
+            this.maskedTextBox1.TabIndex = 4;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
-            // lblFilhoNome
+            // lblDataNascimento
             // 
-            this.lblFilhoNome.AutoSize = true;
-            this.lblFilhoNome.Location = new System.Drawing.Point(-3, 0);
-            this.lblFilhoNome.Name = "lblFilhoNome";
-            this.lblFilhoNome.Size = new System.Drawing.Size(100, 13);
-            this.lblFilhoNome.TabIndex = 6;
-            this.lblFilhoNome.Text = "Nome do Seu Filho:";
+            this.lblDataNascimento.AutoSize = true;
+            this.lblDataNascimento.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataNascimento.Location = new System.Drawing.Point(461, 16);
+            this.lblDataNascimento.Name = "lblDataNascimento";
+            this.lblDataNascimento.Size = new System.Drawing.Size(143, 17);
+            this.lblDataNascimento.TabIndex = 5;
+            this.lblDataNascimento.Text = "DATA DE NASCIMENTO";
             // 
-            // lblFilhoDataNascimento
+            // txtCep
             // 
-            this.lblFilhoDataNascimento.AutoSize = true;
-            this.lblFilhoDataNascimento.Location = new System.Drawing.Point(114, 0);
-            this.lblFilhoDataNascimento.Name = "lblFilhoDataNascimento";
-            this.lblFilhoDataNascimento.Size = new System.Drawing.Size(107, 13);
-            this.lblFilhoDataNascimento.TabIndex = 7;
-            this.lblFilhoDataNascimento.Text = "Data de Nascimento:";
+            this.txtCep.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCep.Location = new System.Drawing.Point(31, 127);
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(128, 25);
+            this.txtCep.TabIndex = 7;
             // 
-            // lblIdade
+            // lblCep
             // 
-            this.lblIdade.AutoSize = true;
-            this.lblIdade.Location = new System.Drawing.Point(223, 28);
-            this.lblIdade.Name = "lblIdade";
-            this.lblIdade.Size = new System.Drawing.Size(44, 13);
-            this.lblIdade.TabIndex = 8;
-            this.lblIdade.Text = "lblIdade";
+            this.lblCep.AutoSize = true;
+            this.lblCep.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCep.Location = new System.Drawing.Point(28, 102);
+            this.lblCep.Name = "lblCep";
+            this.lblCep.Size = new System.Drawing.Size(30, 17);
+            this.lblCep.TabIndex = 6;
+            this.lblCep.Text = "CEP";
             // 
-            // panelExibeDadosFilhos
+            // bntPesquisar
             // 
-            this.panelExibeDadosFilhos.Controls.Add(this.txtFilhoDataNascimento);
-            this.panelExibeDadosFilhos.Controls.Add(this.lblFilhoNome);
-            this.panelExibeDadosFilhos.Controls.Add(this.txtFilhoNome);
-            this.panelExibeDadosFilhos.Controls.Add(this.lblIdade);
-            this.panelExibeDadosFilhos.Controls.Add(this.lblFilhoDataNascimento);
-            this.panelExibeDadosFilhos.Location = new System.Drawing.Point(42, 155);
-            this.panelExibeDadosFilhos.Name = "panelExibeDadosFilhos";
-            this.panelExibeDadosFilhos.Size = new System.Drawing.Size(271, 66);
-            this.panelExibeDadosFilhos.TabIndex = 9;
+            this.bntPesquisar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntPesquisar.Location = new System.Drawing.Point(165, 129);
+            this.bntPesquisar.Name = "bntPesquisar";
+            this.bntPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.bntPesquisar.TabIndex = 8;
+            this.bntPesquisar.Text = "Pesquisar";
+            this.bntPesquisar.UseVisualStyleBackColor = true;
             // 
-            // txtFilhoDataNascimento
+            // txtLogradouro
             // 
-            this.txtFilhoDataNascimento.Location = new System.Drawing.Point(117, 25);
-            this.txtFilhoDataNascimento.Mask = "00/00/0000";
-            this.txtFilhoDataNascimento.Name = "txtFilhoDataNascimento";
-            this.txtFilhoDataNascimento.Size = new System.Drawing.Size(100, 20);
-            this.txtFilhoDataNascimento.TabIndex = 10;
-            this.txtFilhoDataNascimento.ValidatingType = typeof(System.DateTime);
-            this.txtFilhoDataNascimento.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFilhoDataNascimento_KeyDown);
+            this.txtLogradouro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogradouro.Location = new System.Drawing.Point(31, 184);
+            this.txtLogradouro.Name = "txtLogradouro";
+            this.txtLogradouro.Size = new System.Drawing.Size(304, 25);
+            this.txtLogradouro.TabIndex = 10;
+            // 
+            // lblLogradouro
+            // 
+            this.lblLogradouro.AutoSize = true;
+            this.lblLogradouro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogradouro.Location = new System.Drawing.Point(28, 159);
+            this.lblLogradouro.Name = "lblLogradouro";
+            this.lblLogradouro.Size = new System.Drawing.Size(95, 17);
+            this.lblLogradouro.TabIndex = 9;
+            this.lblLogradouro.Text = "LOGRADOURO";
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumero.Location = new System.Drawing.Point(341, 184);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(106, 25);
+            this.txtNumero.TabIndex = 12;
+            // 
+            // lblNumero
+            // 
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(338, 159);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(64, 17);
+            this.lblNumero.TabIndex = 11;
+            this.lblNumero.Text = "NÚMERO";
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBairro.Location = new System.Drawing.Point(453, 184);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(138, 25);
+            this.txtBairro.TabIndex = 14;
+            // 
+            // lblBairro
+            // 
+            this.lblBairro.AutoSize = true;
+            this.lblBairro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.Location = new System.Drawing.Point(450, 159);
+            this.lblBairro.Name = "lblBairro";
+            this.lblBairro.Size = new System.Drawing.Size(52, 17);
+            this.lblBairro.TabIndex = 13;
+            this.lblBairro.Text = "BAIRRO";
+            // 
+            // lblUf
+            // 
+            this.lblUf.AutoSize = true;
+            this.lblUf.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUf.Location = new System.Drawing.Point(243, 219);
+            this.lblUf.Name = "lblUf";
+            this.lblUf.Size = new System.Drawing.Size(23, 17);
+            this.lblUf.TabIndex = 17;
+            this.lblUf.Text = "UF";
+            // 
+            // txtCidade
+            // 
+            this.txtCidade.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCidade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidade.Location = new System.Drawing.Point(31, 244);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(209, 25);
+            this.txtCidade.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(28, 219);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 17);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "CIDADE";
+            // 
+            // txtTelefone
+            // 
+            this.txtTelefone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefone.Location = new System.Drawing.Point(79, 304);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(138, 25);
+            this.txtTelefone.TabIndex = 21;
+            // 
+            // lblTelefone
+            // 
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Location = new System.Drawing.Point(76, 279);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(68, 17);
+            this.lblTelefone.TabIndex = 20;
+            this.lblTelefone.Text = "TELEFONE";
+            // 
+            // txtDdd
+            // 
+            this.txtDdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDdd.Location = new System.Drawing.Point(31, 304);
+            this.txtDdd.Name = "txtDdd";
+            this.txtDdd.Size = new System.Drawing.Size(32, 25);
+            this.txtDdd.TabIndex = 19;
+            // 
+            // lblDdd
+            // 
+            this.lblDdd.AutoSize = true;
+            this.lblDdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDdd.Location = new System.Drawing.Point(28, 279);
+            this.lblDdd.Name = "lblDdd";
+            this.lblDdd.Size = new System.Drawing.Size(35, 17);
+            this.lblDdd.TabIndex = 18;
+            this.lblDdd.Text = "DDD";
+            // 
+            // cmbUf
+            // 
+            this.cmbUf.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUf.FormattingEnabled = true;
+            this.cmbUf.Location = new System.Drawing.Point(246, 244);
+            this.cmbUf.Name = "cmbUf";
+            this.cmbUf.Size = new System.Drawing.Size(99, 25);
+            this.cmbUf.TabIndex = 22;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(223, 304);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblWhatsapp
+            // 
+            this.lblWhatsapp.AutoSize = true;
+            this.lblWhatsapp.Location = new System.Drawing.Point(262, 316);
+            this.lblWhatsapp.Name = "lblWhatsapp";
+            this.lblWhatsapp.Size = new System.Drawing.Size(57, 13);
+            this.lblWhatsapp.TabIndex = 24;
+            this.lblWhatsapp.TabStop = true;
+            this.lblWhatsapp.Text = "WhatsApp";
             // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblTemFilhos);
-            this.Controls.Add(this.panelExibeDadosFilhos);
-            this.Controls.Add(this.rbTemFilhosNão);
-            this.Controls.Add(this.rbTemFilhosSim);
-            this.Controls.Add(this.cmbGenero);
+            this.ClientSize = new System.Drawing.Size(669, 354);
+            this.Controls.Add(this.lblWhatsapp);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.cmbUf);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.lblTelefone);
+            this.Controls.Add(this.txtDdd);
+            this.Controls.Add(this.lblDdd);
+            this.Controls.Add(this.lblUf);
+            this.Controls.Add(this.txtCidade);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtBairro);
+            this.Controls.Add(this.lblBairro);
+            this.Controls.Add(this.txtNumero);
+            this.Controls.Add(this.lblNumero);
+            this.Controls.Add(this.txtLogradouro);
+            this.Controls.Add(this.lblLogradouro);
+            this.Controls.Add(this.bntPesquisar);
+            this.Controls.Add(this.txtCep);
+            this.Controls.Add(this.lblCep);
+            this.Controls.Add(this.lblDataNascimento);
+            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.txtCpf);
+            this.Controls.Add(this.lblCpf);
+            this.Controls.Add(this.txtNomeCompleto);
+            this.Controls.Add(this.lblNomeCompleto);
             this.Name = "frmFuncionario";
             this.Text = "frmFuncionario";
             this.Load += new System.EventHandler(this.frmFuncionario_Load);
-            this.panelExibeDadosFilhos.ResumeLayout(false);
-            this.panelExibeDadosFilhos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,15 +329,30 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cmbGenero;
-        private System.Windows.Forms.RadioButton rbTemFilhosSim;
-        private System.Windows.Forms.RadioButton rbTemFilhosNão;
-        private System.Windows.Forms.Label lblTemFilhos;
-        private System.Windows.Forms.TextBox txtFilhoNome;
-        private System.Windows.Forms.Label lblFilhoNome;
-        private System.Windows.Forms.Label lblFilhoDataNascimento;
-        private System.Windows.Forms.Label lblIdade;
-        private System.Windows.Forms.Panel panelExibeDadosFilhos;
-        private System.Windows.Forms.MaskedTextBox txtFilhoDataNascimento;
+        private System.Windows.Forms.Label lblNomeCompleto;
+        private System.Windows.Forms.TextBox txtNomeCompleto;
+        private System.Windows.Forms.TextBox txtCpf;
+        private System.Windows.Forms.Label lblCpf;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label lblDataNascimento;
+        private System.Windows.Forms.TextBox txtCep;
+        private System.Windows.Forms.Label lblCep;
+        private System.Windows.Forms.Button bntPesquisar;
+        private System.Windows.Forms.TextBox txtLogradouro;
+        private System.Windows.Forms.Label lblLogradouro;
+        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.Label lblNumero;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.Label lblBairro;
+        private System.Windows.Forms.Label lblUf;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.Label lblTelefone;
+        private System.Windows.Forms.TextBox txtDdd;
+        private System.Windows.Forms.Label lblDdd;
+        private System.Windows.Forms.ComboBox cmbUf;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel lblWhatsapp;
     }
 }
