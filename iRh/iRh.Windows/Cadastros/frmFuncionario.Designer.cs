@@ -31,9 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFuncionario));
             this.lblNomeCompleto = new System.Windows.Forms.Label();
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
-            this.txtCpf = new System.Windows.Forms.TextBox();
             this.lblCpf = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtDataNascimento = new System.Windows.Forms.MaskedTextBox();
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.txtCep = new System.Windows.Forms.TextBox();
             this.lblCep = new System.Windows.Forms.Label();
@@ -54,6 +53,11 @@
             this.cmbUf = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblWhatsapp = new System.Windows.Forms.LinkLabel();
+            this.cmbDocumentos = new System.Windows.Forms.ComboBox();
+            this.txtDocumentos = new System.Windows.Forms.Label();
+            this.txtCpf = new System.Windows.Forms.MaskedTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblNumeroDocumento = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,14 +79,6 @@
             this.txtNomeCompleto.Size = new System.Drawing.Size(260, 25);
             this.txtNomeCompleto.TabIndex = 1;
             // 
-            // txtCpf
-            // 
-            this.txtCpf.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpf.Location = new System.Drawing.Point(309, 46);
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(138, 25);
-            this.txtCpf.TabIndex = 3;
-            // 
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
@@ -93,15 +89,15 @@
             this.lblCpf.TabIndex = 2;
             this.lblCpf.Text = "CPF";
             // 
-            // maskedTextBox1
+            // txtDataNascimento
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(464, 46);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(158, 25);
-            this.maskedTextBox1.TabIndex = 4;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.txtDataNascimento.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataNascimento.Location = new System.Drawing.Point(464, 46);
+            this.txtDataNascimento.Mask = "00/00/0000";
+            this.txtDataNascimento.Name = "txtDataNascimento";
+            this.txtDataNascimento.Size = new System.Drawing.Size(158, 25);
+            this.txtDataNascimento.TabIndex = 4;
+            this.txtDataNascimento.ValidatingType = typeof(System.DateTime);
             // 
             // lblDataNascimento
             // 
@@ -116,7 +112,7 @@
             // txtCep
             // 
             this.txtCep.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCep.Location = new System.Drawing.Point(31, 127);
+            this.txtCep.Location = new System.Drawing.Point(31, 187);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(128, 25);
             this.txtCep.TabIndex = 7;
@@ -125,7 +121,7 @@
             // 
             this.lblCep.AutoSize = true;
             this.lblCep.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCep.Location = new System.Drawing.Point(28, 102);
+            this.lblCep.Location = new System.Drawing.Point(28, 162);
             this.lblCep.Name = "lblCep";
             this.lblCep.Size = new System.Drawing.Size(30, 17);
             this.lblCep.TabIndex = 6;
@@ -134,7 +130,7 @@
             // bntPesquisar
             // 
             this.bntPesquisar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntPesquisar.Location = new System.Drawing.Point(165, 129);
+            this.bntPesquisar.Location = new System.Drawing.Point(165, 189);
             this.bntPesquisar.Name = "bntPesquisar";
             this.bntPesquisar.Size = new System.Drawing.Size(75, 23);
             this.bntPesquisar.TabIndex = 8;
@@ -144,7 +140,7 @@
             // txtLogradouro
             // 
             this.txtLogradouro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogradouro.Location = new System.Drawing.Point(31, 184);
+            this.txtLogradouro.Location = new System.Drawing.Point(31, 244);
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(304, 25);
             this.txtLogradouro.TabIndex = 10;
@@ -153,7 +149,7 @@
             // 
             this.lblLogradouro.AutoSize = true;
             this.lblLogradouro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogradouro.Location = new System.Drawing.Point(28, 159);
+            this.lblLogradouro.Location = new System.Drawing.Point(28, 219);
             this.lblLogradouro.Name = "lblLogradouro";
             this.lblLogradouro.Size = new System.Drawing.Size(95, 17);
             this.lblLogradouro.TabIndex = 9;
@@ -162,7 +158,7 @@
             // txtNumero
             // 
             this.txtNumero.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero.Location = new System.Drawing.Point(341, 184);
+            this.txtNumero.Location = new System.Drawing.Point(341, 244);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(106, 25);
             this.txtNumero.TabIndex = 12;
@@ -171,7 +167,7 @@
             // 
             this.lblNumero.AutoSize = true;
             this.lblNumero.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(338, 159);
+            this.lblNumero.Location = new System.Drawing.Point(338, 219);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(64, 17);
             this.lblNumero.TabIndex = 11;
@@ -180,7 +176,7 @@
             // txtBairro
             // 
             this.txtBairro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBairro.Location = new System.Drawing.Point(453, 184);
+            this.txtBairro.Location = new System.Drawing.Point(453, 244);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(138, 25);
             this.txtBairro.TabIndex = 14;
@@ -189,7 +185,7 @@
             // 
             this.lblBairro.AutoSize = true;
             this.lblBairro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBairro.Location = new System.Drawing.Point(450, 159);
+            this.lblBairro.Location = new System.Drawing.Point(450, 219);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(52, 17);
             this.lblBairro.TabIndex = 13;
@@ -199,7 +195,7 @@
             // 
             this.lblUf.AutoSize = true;
             this.lblUf.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUf.Location = new System.Drawing.Point(243, 219);
+            this.lblUf.Location = new System.Drawing.Point(243, 279);
             this.lblUf.Name = "lblUf";
             this.lblUf.Size = new System.Drawing.Size(23, 17);
             this.lblUf.TabIndex = 17;
@@ -209,7 +205,7 @@
             // 
             this.txtCidade.BackColor = System.Drawing.SystemColors.Window;
             this.txtCidade.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCidade.Location = new System.Drawing.Point(31, 244);
+            this.txtCidade.Location = new System.Drawing.Point(31, 304);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(209, 25);
             this.txtCidade.TabIndex = 16;
@@ -218,7 +214,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 219);
+            this.label2.Location = new System.Drawing.Point(28, 279);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 17);
             this.label2.TabIndex = 15;
@@ -227,7 +223,7 @@
             // txtTelefone
             // 
             this.txtTelefone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone.Location = new System.Drawing.Point(79, 304);
+            this.txtTelefone.Location = new System.Drawing.Point(79, 364);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(138, 25);
             this.txtTelefone.TabIndex = 21;
@@ -236,7 +232,7 @@
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(76, 279);
+            this.lblTelefone.Location = new System.Drawing.Point(76, 339);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(68, 17);
             this.lblTelefone.TabIndex = 20;
@@ -245,7 +241,7 @@
             // txtDdd
             // 
             this.txtDdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDdd.Location = new System.Drawing.Point(31, 304);
+            this.txtDdd.Location = new System.Drawing.Point(31, 364);
             this.txtDdd.Name = "txtDdd";
             this.txtDdd.Size = new System.Drawing.Size(32, 25);
             this.txtDdd.TabIndex = 19;
@@ -254,7 +250,7 @@
             // 
             this.lblDdd.AutoSize = true;
             this.lblDdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDdd.Location = new System.Drawing.Point(28, 279);
+            this.lblDdd.Location = new System.Drawing.Point(28, 339);
             this.lblDdd.Name = "lblDdd";
             this.lblDdd.Size = new System.Drawing.Size(35, 17);
             this.lblDdd.TabIndex = 18;
@@ -264,15 +260,15 @@
             // 
             this.cmbUf.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbUf.FormattingEnabled = true;
-            this.cmbUf.Location = new System.Drawing.Point(246, 244);
+            this.cmbUf.Location = new System.Drawing.Point(246, 304);
             this.cmbUf.Name = "cmbUf";
-            this.cmbUf.Size = new System.Drawing.Size(99, 25);
+            this.cmbUf.Size = new System.Drawing.Size(156, 25);
             this.cmbUf.TabIndex = 22;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(223, 304);
+            this.pictureBox1.Location = new System.Drawing.Point(223, 364);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(33, 32);
             this.pictureBox1.TabIndex = 23;
@@ -281,18 +277,68 @@
             // lblWhatsapp
             // 
             this.lblWhatsapp.AutoSize = true;
-            this.lblWhatsapp.Location = new System.Drawing.Point(262, 316);
+            this.lblWhatsapp.Location = new System.Drawing.Point(262, 376);
             this.lblWhatsapp.Name = "lblWhatsapp";
             this.lblWhatsapp.Size = new System.Drawing.Size(57, 13);
             this.lblWhatsapp.TabIndex = 24;
             this.lblWhatsapp.TabStop = true;
             this.lblWhatsapp.Text = "WhatsApp";
             // 
+            // cmbDocumentos
+            // 
+            this.cmbDocumentos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDocumentos.FormattingEnabled = true;
+            this.cmbDocumentos.Location = new System.Drawing.Point(31, 97);
+            this.cmbDocumentos.Name = "cmbDocumentos";
+            this.cmbDocumentos.Size = new System.Drawing.Size(252, 25);
+            this.cmbDocumentos.TabIndex = 26;
+            // 
+            // txtDocumentos
+            // 
+            this.txtDocumentos.AutoSize = true;
+            this.txtDocumentos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDocumentos.Location = new System.Drawing.Point(27, 77);
+            this.txtDocumentos.Name = "txtDocumentos";
+            this.txtDocumentos.Size = new System.Drawing.Size(171, 17);
+            this.txtDocumentos.TabIndex = 27;
+            this.txtDocumentos.Text = "Documento de Identificação";
+            // 
+            // txtCpf
+            // 
+            this.txtCpf.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpf.Location = new System.Drawing.Point(309, 46);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(138, 25);
+            this.txtCpf.TabIndex = 28;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(289, 97);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(176, 25);
+            this.textBox1.TabIndex = 29;
+            // 
+            // lblNumeroDocumento
+            // 
+            this.lblNumeroDocumento.AutoSize = true;
+            this.lblNumeroDocumento.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroDocumento.Location = new System.Drawing.Point(286, 77);
+            this.lblNumeroDocumento.Name = "lblNumeroDocumento";
+            this.lblNumeroDocumento.Size = new System.Drawing.Size(147, 17);
+            this.lblNumeroDocumento.TabIndex = 30;
+            this.lblNumeroDocumento.Text = "Número do Documento";
+            // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 354);
+            this.ClientSize = new System.Drawing.Size(669, 415);
+            this.Controls.Add(this.lblNumeroDocumento);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCpf);
+            this.Controls.Add(this.txtDocumentos);
+            this.Controls.Add(this.cmbDocumentos);
             this.Controls.Add(this.lblWhatsapp);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbUf);
@@ -313,8 +359,7 @@
             this.Controls.Add(this.txtCep);
             this.Controls.Add(this.lblCep);
             this.Controls.Add(this.lblDataNascimento);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.txtCpf);
+            this.Controls.Add(this.txtDataNascimento);
             this.Controls.Add(this.lblCpf);
             this.Controls.Add(this.txtNomeCompleto);
             this.Controls.Add(this.lblNomeCompleto);
@@ -331,9 +376,8 @@
 
         private System.Windows.Forms.Label lblNomeCompleto;
         private System.Windows.Forms.TextBox txtNomeCompleto;
-        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label lblCpf;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox txtDataNascimento;
         private System.Windows.Forms.Label lblDataNascimento;
         private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label lblCep;
@@ -354,5 +398,10 @@
         private System.Windows.Forms.ComboBox cmbUf;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel lblWhatsapp;
+        private System.Windows.Forms.ComboBox cmbDocumentos;
+        private System.Windows.Forms.Label txtDocumentos;
+        private System.Windows.Forms.MaskedTextBox txtCpf;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblNumeroDocumento;
     }
 }

@@ -13,18 +13,29 @@ namespace iRh.Windows.Cadastros
         private void frmFuncionario_Load(object sender, System.EventArgs e)
         {
             CarregarEstados();
+            CarregarDocumentos();
+        }
+        private void CarregarDocumentos()
+        {
+            var documento = new Documentos();
+            var listaDocumentos = documento.TodosOsDocumentos();
+            var documentosAz = listaDocumentos.OrderBy(x => x.Documento).ToList();
+            cmbDocumentos.Items.Clear();
+            cmbDocumentos.DataSource = documentosAz;
+            cmbDocumentos.DisplayMember = "Documento";
+            cmbDocumentos.ValueMember = "Id";
         }
         private void CarregarEstados()
         {
             var estado = new Estados();
-            var listaEStados = estado.ObterTodosEstados();
+            var listaEstados = estado.ObterTodosEstados();
+            var estadosAz = listaEstados.OrderBy(x => x.Sigla).ToList();
             cmbUf.Items.Clear();
-            cmbUf.DataSource = listaEStados.OrderBy(x => x.Sigla);
-            cmbUf.DisplayMember = "Sigla";
-            cmbUf.ValueMember = "Id";
+            cmbUf.DataSource = estadosAz;
+            cmbUf.DisplayMember = "Nome";
+            cmbUf.ValueMember = "Sigla";
 
         }
 
-        
     }
 }

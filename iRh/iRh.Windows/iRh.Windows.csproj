@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Core\Colaborador.cs" />
     <Compile Include="Core\Estados.cs" />
+    <Compile Include="Core\Identificação.cs" />
     <Compile Include="Core\Inss.cs" />
     <Compile Include="Core\Irrf.cs" />
     <Compile Include="Core\ValeTransporte.cs" />
