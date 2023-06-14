@@ -20,19 +20,17 @@ namespace iRh.Windows.Core
         public string Gia { get; set; }
         public string Ddd { get; set; }
         public string Siafi { get; set; }
-        
+        public bool Erro { get; set; }
         public Endereco ObterPorCep(string cep)
         {
-            var enderecoDaApi = new Endereco();
 
             var http = new HttpClient();
 
-            var url = new Uri("https://viacep.com.br/" + cep + "/json/");
+            var url = new Uri("https://viacep.com.br/ws/" + cep + "/json/");
             var result = http.GetAsync(url).GetAwaiter().GetResult();
 
             var resultContent = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-
-            enderecoDaApi = JsonConvert.DeserializeObject<Endereco>(resultContent);
+            var enderecoDaApi = JsonConvert.DeserializeObject<Endereco>(resultContent);
 
             return enderecoDaApi;
         }

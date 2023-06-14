@@ -31,7 +31,7 @@ namespace iRh.Windows.Simuladores
             }
             catch (Exception)
             {
-                MessageBox.Show("Informe um valor de salário válido, ex. 3500", 
+                MessageBox.Show("Informe um valor de salário válido, ex. 3500",
                                     "Atenção",
                                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

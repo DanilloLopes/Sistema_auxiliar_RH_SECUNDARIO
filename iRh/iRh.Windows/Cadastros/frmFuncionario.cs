@@ -40,11 +40,49 @@ namespace iRh.Windows.Cadastros
 
         private void btnPesquisar_Click(object sender, System.EventArgs e)
         {
-            var cepDigitado = txtCep.Text;
+            txtLogradouro.Enabled = true;
+            txtBairro.Enabled = true;
+            txtCidade.Enabled = true;
+            cmbUf.Enabled = true;
 
-            var endereco = new Endereco();
-            var enderecoCompleto = endereco.ObterPorCep(cepDigitado);
+            txtLogradouro.Clear();
+            txtBairro.Clear();
+            txtCidade.Clear();
+            cmbUf.SelectedValue = "AC";
 
+            if (string.IsNullOrEmpty(txtCep.Text) || txtCep.TextLength != 8)
+            {
+                MessageBox.Show("Insira um Cep Válido",
+                                        "ERRO",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                var cepDigitado = txtCep.Text;
+
+                var endereco = new Endereco();
+                var enderecoCompleto = endereco.ObterPorCep(cepDigitado);
+                var erro = enderecoCompleto.Erro;
+                if (erro)
+                {
+                    MessageBox.Show("Insira um Cep Válido",
+                                        "ERRO",
+                                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    txtLogradouro.Text = enderecoCompleto.Logradouro;
+                    txtBairro.Text = enderecoCompleto.Bairro;
+                    txtCidade.Text = enderecoCompleto.Localidade;
+                    txtDdd.Text = enderecoCompleto.Ddd;
+                    cmbUf.SelectedValue = enderecoCompleto.Uf;
+
+                    txtLogradouro.Enabled = false;
+                    txtBairro.Enabled = false;
+                    txtCidade.Enabled = false;
+                    cmbUf.Enabled = false;
+                }
+            }
         }
     }
 }
