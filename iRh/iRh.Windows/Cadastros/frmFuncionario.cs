@@ -24,6 +24,7 @@ namespace iRh.Windows.Cadastros
             cmbDocumentos.DataSource = documentosAz;
             cmbDocumentos.DisplayMember = "Documento";
             cmbDocumentos.ValueMember = "Id";
+            
         }
         private void CarregarEstados()
         {
@@ -37,5 +38,13 @@ namespace iRh.Windows.Cadastros
 
         }
 
+        private void btnPesquisar_Click(object sender, System.EventArgs e)
+        {
+            var cepDigitado = txtCep.Text;
+
+            var endereco = new Endereco();
+            var enderecoCompleto = endereco.ObterPorCep(cepDigitado);
+
+        }
     }
 }

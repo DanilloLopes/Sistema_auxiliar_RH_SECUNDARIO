@@ -36,7 +36,7 @@
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.txtCep = new System.Windows.Forms.TextBox();
             this.lblCep = new System.Windows.Forms.Label();
-            this.bntPesquisar = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtLogradouro = new System.Windows.Forms.TextBox();
             this.lblLogradouro = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
@@ -127,15 +127,16 @@
             this.lblCep.TabIndex = 6;
             this.lblCep.Text = "CEP";
             // 
-            // bntPesquisar
+            // btnPesquisar
             // 
-            this.bntPesquisar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntPesquisar.Location = new System.Drawing.Point(165, 189);
-            this.bntPesquisar.Name = "bntPesquisar";
-            this.bntPesquisar.Size = new System.Drawing.Size(75, 23);
-            this.bntPesquisar.TabIndex = 8;
-            this.bntPesquisar.Text = "Pesquisar";
-            this.bntPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.Location = new System.Drawing.Point(165, 189);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisar.TabIndex = 8;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtLogradouro
             // 
@@ -355,7 +356,7 @@
             this.Controls.Add(this.lblNumero);
             this.Controls.Add(this.txtLogradouro);
             this.Controls.Add(this.lblLogradouro);
-            this.Controls.Add(this.bntPesquisar);
+            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.txtCep);
             this.Controls.Add(this.lblCep);
             this.Controls.Add(this.lblDataNascimento);
@@ -381,7 +382,7 @@
         private System.Windows.Forms.Label lblDataNascimento;
         private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label lblCep;
-        private System.Windows.Forms.Button bntPesquisar;
+        private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtLogradouro;
         private System.Windows.Forms.Label lblLogradouro;
         private System.Windows.Forms.TextBox txtNumero;
