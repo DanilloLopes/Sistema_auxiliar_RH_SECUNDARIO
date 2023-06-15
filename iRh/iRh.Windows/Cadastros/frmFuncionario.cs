@@ -50,39 +50,43 @@ namespace iRh.Windows.Cadastros
             txtCidade.Clear();
             cmbUf.SelectedValue = "AC";
 
-            if (string.IsNullOrEmpty(txtCep.Text) || txtCep.TextLength != 8)
+            if (string.IsNullOrEmpty(txtCep.Text) || txtCep.TextLength != 9)
             {
                 MessageBox.Show("Insira um Cep Válido",
                                         "ERRO",
                                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+
+            var cepDigitado = txtCep.Text;
+            var endereco = new Endereco();
+            var enderecoCompleto = endereco.ObterPorCep(cepDigitado);
+            var erro = enderecoCompleto.Erro;
+            if (erro)
             {
-                var cepDigitado = txtCep.Text;
-
-                var endereco = new Endereco();
-                var enderecoCompleto = endereco.ObterPorCep(cepDigitado);
-                var erro = enderecoCompleto.Erro;
-                if (erro)
-                {
-                    MessageBox.Show("Insira um Cep Válido",
-                                        "ERRO",
-                                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    txtLogradouro.Text = enderecoCompleto.Logradouro;
-                    txtBairro.Text = enderecoCompleto.Bairro;
-                    txtCidade.Text = enderecoCompleto.Localidade;
-                    txtDdd.Text = enderecoCompleto.Ddd;
-                    cmbUf.SelectedValue = enderecoCompleto.Uf;
-
-                    txtLogradouro.Enabled = false;
-                    txtBairro.Enabled = false;
-                    txtCidade.Enabled = false;
-                    cmbUf.Enabled = false;
-                }
+                MessageBox.Show("Insira um Cep Válido","ERRO",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCep.Focus();
+                return;
             }
+                
+            txtLogradouro.Text = enderecoCompleto.Logradouro;
+            txtBairro.Text = enderecoCompleto.Bairro;
+            txtCidade.Text = enderecoCompleto.Localidade;
+            txtDdd.Text = enderecoCompleto.Ddd;
+            cmbUf.SelectedValue = enderecoCompleto.Uf;
+            if(string.IsNullOrEmpty(txtLogradouro.Text))
+            {
+                txtCidade.Enabled = false;
+                cmbUf.Enabled = false;
+                return;
+            }
+            txtLogradouro.Enabled = false;
+            txtBairro.Enabled = false;
+            txtCidade.Enabled = false;
+            cmbUf.Enabled = false;
+
         }
+
     }
 }
