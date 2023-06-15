@@ -47,8 +47,8 @@ namespace iRh.Windows.Cadastros
             txtBairro.Clear();
             txtCidade.Clear();
             cmbUf.SelectedValue = "AC";
-
-            if (string.IsNullOrEmpty(txtCep.Text) || txtCep.TextLength != 9)
+            var textoCep = txtCep.Text.ToString();
+            if (textoCep.Length != 9)
             {
                 MessageBox.Show("Insira um Cep Válido",
                                         "ERRO",
@@ -73,16 +73,23 @@ namespace iRh.Windows.Cadastros
             txtCidade.Text = enderecoCompleto.Localidade;
             txtDdd.Text = enderecoCompleto.Ddd;
             cmbUf.SelectedValue = enderecoCompleto.Uf;
-            if(string.IsNullOrEmpty(txtLogradouro.Text))
+            if(!(string.IsNullOrEmpty(txtLogradouro.Text)))
+            {
+                txtLogradouro.Enabled = false;
+            }
+            if (!(string.IsNullOrEmpty(txtBairro.Text)))
+            {
+                txtBairro.Enabled = false;
+            }
+            if (!(string.IsNullOrEmpty(txtCidade.Text)))
             {
                 txtCidade.Enabled = false;
-                cmbUf.Enabled = false;
-                return;
             }
-            txtLogradouro.Enabled = false;
-            txtBairro.Enabled = false;
-            txtCidade.Enabled = false;
-            cmbUf.Enabled = false;
+            if (!(string.IsNullOrEmpty(enderecoCompleto.Uf)))
+            {
+                cmbUf.Enabled = false;
+            }
+
 
         }
 

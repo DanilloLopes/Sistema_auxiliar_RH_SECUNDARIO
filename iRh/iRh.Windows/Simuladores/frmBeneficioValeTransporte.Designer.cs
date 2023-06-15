@@ -72,7 +72,7 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(123, 29);
+            this.lblResultado.Location = new System.Drawing.Point(137, 33);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(135, 30);
             this.lblResultado.TabIndex = 0;
@@ -100,19 +100,19 @@
             // 
             this.lblTextoValeAPenaOuNao.AutoSize = true;
             this.lblTextoValeAPenaOuNao.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoValeAPenaOuNao.Location = new System.Drawing.Point(14, 127);
+            this.lblTextoValeAPenaOuNao.Location = new System.Drawing.Point(3, 127);
             this.lblTextoValeAPenaOuNao.Name = "lblTextoValeAPenaOuNao";
-            this.lblTextoValeAPenaOuNao.Size = new System.Drawing.Size(50, 20);
+            this.lblTextoValeAPenaOuNao.Size = new System.Drawing.Size(159, 20);
             this.lblTextoValeAPenaOuNao.TabIndex = 10;
-            this.lblTextoValeAPenaOuNao.Text = "label1";
+            this.lblTextoValeAPenaOuNao.Text = "textoValeAPenaOuNao";
             // 
             // panelResultado
             // 
             this.panelResultado.Controls.Add(this.lblTextoValeAPenaOuNao);
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(322, 29);
+            this.panelResultado.Location = new System.Drawing.Point(283, 29);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(338, 290);
+            this.panelResultado.Size = new System.Drawing.Size(377, 290);
             this.panelResultado.TabIndex = 11;
             this.panelResultado.Visible = false;
             // 

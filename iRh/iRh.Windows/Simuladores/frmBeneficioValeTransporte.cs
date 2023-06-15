@@ -26,17 +26,35 @@ namespace iRh.Windows.Simuladores
                 txtSalarioBase.Focus();
                 return;
             }
-            else if(string.IsNullOrEmpty(txtValorDoPasse.Text))
+            if(string.IsNullOrEmpty(txtValorDoPasse.Text))
             {
                 MessageBox.Show("Informe o valor do passe de ônibus.", "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtSalarioBase.Focus();
+                return;
             }
             try
             {
                 var salario = double.Parse(txtSalarioBase.Text);
                 var descontoValeTransporte = Core.ValeTransporte.Calcula(salario);
                 lblResultado.Text = descontoValeTransporte.ToString("C");
+
+                var valorDoPasseMensal = double.Parse(txtValorDoPasse.Text) * 4 * 20;
+                
+                if(valorDoPasseMensal > descontoValeTransporte)
+                {
+                    lblTextoValeAPenaOuNao.Text = "Com base nos valores apresentados recomenda-se" + "\n" + "que se escolha a opção de utilizar" +
+                        " o Vale Transporte " + "\n" + "da empresa, pois o valor descontado será de " + descontoValeTransporte.ToString("C") + "\n" +
+                        " e o valor que seria utilizado pagando 4 passes por dia durante 20 dias é de " + valorDoPasseMensal.ToString("C");
+                }
+                else if(valorDoPasseMensal == descontoValeTransporte){ 
+                    
+
+                }else{
+
+
+                }
+                
                 panelResultado.Visible = true;
             }
             catch (Exception)

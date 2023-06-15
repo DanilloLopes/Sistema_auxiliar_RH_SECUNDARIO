@@ -57,7 +57,7 @@
             // 
             // panelResultadoIrrf
             // 
-            this.panelResultadoIrrf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelResultadoIrrf.BackColor = System.Drawing.Color.Transparent;
             this.panelResultadoIrrf.Controls.Add(this.lblResultadoIrrf);
             this.panelResultadoIrrf.Location = new System.Drawing.Point(31, 149);
             this.panelResultadoIrrf.Name = "panelResultadoIrrf";
