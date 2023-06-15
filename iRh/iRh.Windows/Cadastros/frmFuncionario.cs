@@ -24,7 +24,6 @@ namespace iRh.Windows.Cadastros
             cmbDocumentos.DataSource = documentosAz;
             cmbDocumentos.DisplayMember = "Documento";
             cmbDocumentos.ValueMember = "Id";
-            
         }
         private void CarregarEstados()
         {
@@ -35,7 +34,6 @@ namespace iRh.Windows.Cadastros
             cmbUf.DataSource = estadosAz;
             cmbUf.DisplayMember = "Nome";
             cmbUf.ValueMember = "Sigla";
-
         }
 
         private void btnPesquisar_Click(object sender, System.EventArgs e)
