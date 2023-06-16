@@ -35,6 +35,7 @@ namespace iRh.Windows.Simuladores
             }
             try
             {
+                panelResultado.Visible = true;
                 var salario = double.Parse(txtSalarioBase.Text);
                 var descontoValeTransporte = Core.ValeTransporte.Calcula(salario);
                 lblResultado.Text = descontoValeTransporte.ToString("C");
@@ -43,15 +44,20 @@ namespace iRh.Windows.Simuladores
                 
                 if(valorDoPasseMensal > descontoValeTransporte)
                 {
-                    lblTextoValeAPenaOuNao.Text = "Com base nos valores apresentados recomenda-se" + "\n" + "que se escolha a opção de utilizar" +
-                        " o Vale Transporte " + "\n" + "da empresa, pois o valor descontado será de " + descontoValeTransporte.ToString("C") + "\n" +
-                        " e o valor que seria utilizado pagando 4 passes por dia durante 20 dias é de " + valorDoPasseMensal.ToString("C");
+                    lblTextoValeAPenaOuNao.Text = "Com base nos valores apresentados recomenda-se que se escolha a opção de utilizar" +
+                        " o Vale Transporte da empresa, pois o valor descontado será de " + descontoValeTransporte.ToString("C") + 
+                        ", e o valor que seria gasto pagando 4 passes por dia durante 20 dias é de " + valorDoPasseMensal.ToString("C") +
+                        " gerando uma economia de " + (valorDoPasseMensal - descontoValeTransporte).ToString("C") + ".";
+                   
                 }
                 else if(valorDoPasseMensal == descontoValeTransporte){ 
-                    
+                    flpValeAPenaOuNao.Visible = false;
 
                 }else{
-
+                    lblTextoValeAPenaOuNao.Text = "Com base nos valores apresentados recomenda-se que se escolha a opção" +
+                        " de pagar por conta própria o passe de ônibus, pois o valor que será gasto pagando 4 passes por dia durante " +
+                        "20 dias é de " + valorDoPasseMensal.ToString("C") + ", e o valor que seria descontado é de " + descontoValeTransporte.ToString("C") +
+                        " gerando uma economia de " + (descontoValeTransporte - valorDoPasseMensal).ToString("C") + ".";
 
                 }
                 
