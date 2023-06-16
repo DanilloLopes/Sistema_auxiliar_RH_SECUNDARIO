@@ -76,7 +76,7 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(126, 33);
+            this.lblResultado.Location = new System.Drawing.Point(131, 63);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(135, 30);
             this.lblResultado.TabIndex = 0;
@@ -105,9 +105,9 @@
             this.panelResultado.Controls.Add(this.lblResultadoTitulo);
             this.panelResultado.Controls.Add(this.flpValeAPenaOuNao);
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(283, 29);
+            this.panelResultado.Location = new System.Drawing.Point(283, 51);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(377, 320);
+            this.panelResultado.Size = new System.Drawing.Size(377, 298);
             this.panelResultado.TabIndex = 11;
             this.panelResultado.Visible = false;
             // 
@@ -116,9 +116,9 @@
             this.flpValeAPenaOuNao.Controls.Add(this.lblDica);
             this.flpValeAPenaOuNao.Controls.Add(this.lblTextoValeAPenaOuNao);
             this.flpValeAPenaOuNao.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpValeAPenaOuNao.Location = new System.Drawing.Point(0, 161);
+            this.flpValeAPenaOuNao.Location = new System.Drawing.Point(0, 134);
             this.flpValeAPenaOuNao.Name = "flpValeAPenaOuNao";
-            this.flpValeAPenaOuNao.Size = new System.Drawing.Size(377, 159);
+            this.flpValeAPenaOuNao.Size = new System.Drawing.Size(377, 186);
             this.flpValeAPenaOuNao.TabIndex = 12;
             // 
             // lblTextoValeAPenaOuNao
@@ -135,7 +135,7 @@
             // 
             this.lblResultadoTitulo.AutoSize = true;
             this.lblResultadoTitulo.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultadoTitulo.Location = new System.Drawing.Point(3, 0);
+            this.lblResultadoTitulo.Location = new System.Drawing.Point(-5, 0);
             this.lblResultadoTitulo.Name = "lblResultadoTitulo";
             this.lblResultadoTitulo.Size = new System.Drawing.Size(199, 30);
             this.lblResultadoTitulo.TabIndex = 13;
