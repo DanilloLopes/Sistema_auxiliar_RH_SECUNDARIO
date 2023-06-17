@@ -56,9 +56,12 @@
     <Compile Include="Cadastros\frmFuncionario.Designer.cs">
       <DependentUpon>frmFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core\AdicionalNoturno.cs" />
+    <Compile Include="Core\AdicionalPericulosidade.cs" />
     <Compile Include="Core\Colaborador.cs" />
     <Compile Include="Core\Endereco.cs" />
     <Compile Include="Core\Estados.cs" />
+    <Compile Include="Core\Fgts.cs" />
     <Compile Include="Core\Identificacao.cs" />
     <Compile Include="Core\Inss.cs" />
     <Compile Include="Core\Irrf.cs" />
@@ -131,6 +134,12 @@
     <Compile Include="Simuladores\frmDescontoIrrf.Designer.cs">
       <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </Compile>
+    <Compile Include="Simuladores\frmDetalhamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmDetalhamento.Designer.cs">
+      <DependentUpon>frmDetalhamento.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cadastros\frmFuncionario.resx">
       <DependentUpon>frmFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmDescontoIrrf.resx">
       <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmDetalhamento.resx">
+      <DependentUpon>frmDetalhamento.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

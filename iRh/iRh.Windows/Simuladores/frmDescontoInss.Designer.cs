@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.lblSalario = new System.Windows.Forms.Label();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.btnCalcularInss = new System.Windows.Forms.Button();
             this.panelResultadoInss = new System.Windows.Forms.Panel();
             this.lblResultadoInss = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panelResultadoInss.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,11 +85,6 @@
             this.lblResultadoInss.TabIndex = 4;
             this.lblResultadoInss.Text = "lblResultado";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // frmDescontoInss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +111,5 @@
         private System.Windows.Forms.Button btnCalcularInss;
         private System.Windows.Forms.Panel panelResultadoInss;
         private System.Windows.Forms.Label lblResultadoInss;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

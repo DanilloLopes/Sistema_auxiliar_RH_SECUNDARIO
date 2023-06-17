@@ -43,6 +43,7 @@
             this.menuBeneficioPis = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBeneficioSeguroDesemprego = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBeneficioValeTransporte = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuDetalhamento = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +86,8 @@
             this.menuBeneficioPericulosidade,
             this.menuBeneficioPis,
             this.menuBeneficioSeguroDesemprego,
-            this.menuBeneficioValeTransporte});
+            this.menuBeneficioValeTransporte,
+            this.menuDetalhamento});
             this.simuladoresToolStripMenuItem.Name = "simuladoresToolStripMenuItem";
             this.simuladoresToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.simuladoresToolStripMenuItem.Text = "Simuladores";
@@ -165,6 +167,13 @@
             this.menuBeneficioValeTransporte.Text = "Beneficio de Vale Transporte";
             this.menuBeneficioValeTransporte.Click += new System.EventHandler(this.menuBeneficioValeTransporte_Click);
             // 
+            // menuDetalhamento
+            // 
+            this.menuDetalhamento.Name = "menuDetalhamento";
+            this.menuDetalhamento.Size = new System.Drawing.Size(249, 22);
+            this.menuDetalhamento.Text = "Detalhamento";
+            this.menuDetalhamento.Click += new System.EventHandler(this.menuDetalhamento_Click);
+            // 
             // PrincipalMdi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,7 +183,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuPrincipal;
             this.Name = "PrincipalMdi";
-            this.Text = "PrincipalMdi";
+            this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuPrincipal.ResumeLayout(false);
             this.menuPrincipal.PerformLayout();
@@ -200,5 +209,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuBeneficioPis;
         private System.Windows.Forms.ToolStripMenuItem menuBeneficioSeguroDesemprego;
         private System.Windows.Forms.ToolStripMenuItem menuBeneficioValeTransporte;
+        private System.Windows.Forms.ToolStripMenuItem menuDetalhamento;
     }
 }
