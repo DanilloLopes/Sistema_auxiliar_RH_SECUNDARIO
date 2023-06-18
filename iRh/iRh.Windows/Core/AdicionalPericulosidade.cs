@@ -8,7 +8,7 @@ namespace iRh.Windows.Core
 {
     public static class AdicionalPericulosidade
     {
-        static double Calcula(double salarioBase)
+        public static double Calcula(double salarioBase)
         {
             double adicionalPericulosidade = 0.3 * salarioBase;
             return adicionalPericulosidade;

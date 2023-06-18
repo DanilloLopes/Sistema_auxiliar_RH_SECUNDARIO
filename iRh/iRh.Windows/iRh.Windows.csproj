@@ -62,6 +62,7 @@
     <Compile Include="Core\Endereco.cs" />
     <Compile Include="Core\Estados.cs" />
     <Compile Include="Core\Fgts.cs" />
+    <Compile Include="Core\HoraExtra.cs" />
     <Compile Include="Core\Identificacao.cs" />
     <Compile Include="Core\Inss.cs" />
     <Compile Include="Core\Irrf.cs" />

@@ -36,8 +36,6 @@
             this.txtHorasNoturnas = new System.Windows.Forms.TextBox();
             this.cmbRecebePericulosidade = new System.Windows.Forms.ComboBox();
             this.lblRecebePericulosidade = new System.Windows.Forms.Label();
-            this.cmbTrabalhaAPenasANoite = new System.Windows.Forms.ComboBox();
-            this.lblTrabalhaAPenasANoite = new System.Windows.Forms.Label();
             this.cmbTemDescontoValeTransporte = new System.Windows.Forms.ComboBox();
             this.lblTemDescontoValeTransporte = new System.Windows.Forms.Label();
             this.txtTrabalhaQuantasHoras = new System.Windows.Forms.TextBox();
@@ -51,7 +49,6 @@
             this.lblTotalProventos = new System.Windows.Forms.Label();
             this.lblProventos = new System.Windows.Forms.Label();
             this.btnGerarDetalhamento = new System.Windows.Forms.Button();
-            this.flpValorProventos = new System.Windows.Forms.FlowLayoutPanel();
             this.lblValorSalarioBase = new System.Windows.Forms.Label();
             this.lblValorAdicionalPericulosidade = new System.Windows.Forms.Label();
             this.lblValorAdicionalNoturno = new System.Windows.Forms.Label();
@@ -59,9 +56,10 @@
             this.lblValorFgts = new System.Windows.Forms.Label();
             this.lblValorTotalProventos = new System.Windows.Forms.Label();
             this.pnlDetalhamento = new System.Windows.Forms.Panel();
+            this.lblDetalhamento = new System.Windows.Forms.Label();
             this.flpValorTotal = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblValorSalarioLiquido = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.flpValorDescontos = new System.Windows.Forms.FlowLayoutPanel();
             this.lblValorIrff = new System.Windows.Forms.Label();
             this.lblValorInss = new System.Windows.Forms.Label();
             this.lblValorValeTransporte = new System.Windows.Forms.Label();
@@ -78,15 +76,15 @@
             this.cmbFezHoraExtra = new System.Windows.Forms.ComboBox();
             this.txtHoraExtra = new System.Windows.Forms.TextBox();
             this.lblHoraExtra = new System.Windows.Forms.Label();
-            this.lblValorSalarioLiquido = new System.Windows.Forms.Label();
-            this.lblDetalhamento = new System.Windows.Forms.Label();
+            this.flpValorDescontos = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpValorProventos = new System.Windows.Forms.FlowLayoutPanel();
             this.flpProventos.SuspendLayout();
-            this.flpValorProventos.SuspendLayout();
             this.pnlDetalhamento.SuspendLayout();
             this.flpValorTotal.SuspendLayout();
-            this.flpValorDescontos.SuspendLayout();
             this.flpTotal.SuspendLayout();
             this.flpDescontos.SuspendLayout();
+            this.flpValorDescontos.SuspendLayout();
+            this.flpValorProventos.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblSalarioBase
@@ -111,11 +109,11 @@
             // 
             this.lblHorasNoturnas.AutoSize = true;
             this.lblHorasNoturnas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHorasNoturnas.Location = new System.Drawing.Point(61, 174);
+            this.lblHorasNoturnas.Location = new System.Drawing.Point(41, 124);
             this.lblHorasNoturnas.Name = "lblHorasNoturnas";
             this.lblHorasNoturnas.Size = new System.Drawing.Size(238, 17);
             this.lblHorasNoturnas.TabIndex = 8;
-            this.lblHorasNoturnas.Text = "Horas trabalhadas entre às 22h e às 5h";
+            this.lblHorasNoturnas.Text = "Quantidade de horas noturnas mensais";
             // 
             // cmbRecebeAdicionalNoturno
             // 
@@ -143,9 +141,9 @@
             // txtHorasNoturnas
             // 
             this.txtHorasNoturnas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHorasNoturnas.Location = new System.Drawing.Point(64, 194);
+            this.txtHorasNoturnas.Location = new System.Drawing.Point(44, 144);
             this.txtHorasNoturnas.Name = "txtHorasNoturnas";
-            this.txtHorasNoturnas.Size = new System.Drawing.Size(130, 25);
+            this.txtHorasNoturnas.Size = new System.Drawing.Size(152, 25);
             this.txtHorasNoturnas.TabIndex = 9;
             // 
             // cmbRecebePericulosidade
@@ -170,28 +168,6 @@
             this.lblRecebePericulosidade.TabIndex = 10;
             this.lblRecebePericulosidade.Text = "Recebe Adicional de Periculosidade?";
             // 
-            // cmbTrabalhaAPenasANoite
-            // 
-            this.cmbTrabalhaAPenasANoite.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTrabalhaAPenasANoite.FormattingEnabled = true;
-            this.cmbTrabalhaAPenasANoite.Items.AddRange(new object[] {
-            "Não",
-            "Sim"});
-            this.cmbTrabalhaAPenasANoite.Location = new System.Drawing.Point(44, 146);
-            this.cmbTrabalhaAPenasANoite.Name = "cmbTrabalhaAPenasANoite";
-            this.cmbTrabalhaAPenasANoite.Size = new System.Drawing.Size(121, 25);
-            this.cmbTrabalhaAPenasANoite.TabIndex = 13;
-            // 
-            // lblTrabalhaAPenasANoite
-            // 
-            this.lblTrabalhaAPenasANoite.AutoSize = true;
-            this.lblTrabalhaAPenasANoite.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrabalhaAPenasANoite.Location = new System.Drawing.Point(41, 126);
-            this.lblTrabalhaAPenasANoite.Name = "lblTrabalhaAPenasANoite";
-            this.lblTrabalhaAPenasANoite.Size = new System.Drawing.Size(154, 17);
-            this.lblTrabalhaAPenasANoite.TabIndex = 12;
-            this.lblTrabalhaAPenasANoite.Text = "Trabalha apenas a noite?";
-            // 
             // cmbTemDescontoValeTransporte
             // 
             this.cmbTemDescontoValeTransporte.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -199,7 +175,7 @@
             this.cmbTemDescontoValeTransporte.Items.AddRange(new object[] {
             "Não",
             "Sim"});
-            this.cmbTemDescontoValeTransporte.Location = new System.Drawing.Point(25, 249);
+            this.cmbTemDescontoValeTransporte.Location = new System.Drawing.Point(25, 199);
             this.cmbTemDescontoValeTransporte.Name = "cmbTemDescontoValeTransporte";
             this.cmbTemDescontoValeTransporte.Size = new System.Drawing.Size(121, 25);
             this.cmbTemDescontoValeTransporte.TabIndex = 15;
@@ -208,7 +184,7 @@
             // 
             this.lblTemDescontoValeTransporte.AutoSize = true;
             this.lblTemDescontoValeTransporte.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTemDescontoValeTransporte.Location = new System.Drawing.Point(22, 228);
+            this.lblTemDescontoValeTransporte.Location = new System.Drawing.Point(22, 176);
             this.lblTemDescontoValeTransporte.Name = "lblTemDescontoValeTransporte";
             this.lblTemDescontoValeTransporte.Size = new System.Drawing.Size(207, 17);
             this.lblTemDescontoValeTransporte.TabIndex = 14;
@@ -325,7 +301,7 @@
             // btnGerarDetalhamento
             // 
             this.btnGerarDetalhamento.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGerarDetalhamento.Location = new System.Drawing.Point(339, 350);
+            this.btnGerarDetalhamento.Location = new System.Drawing.Point(330, 298);
             this.btnGerarDetalhamento.Name = "btnGerarDetalhamento";
             this.btnGerarDetalhamento.Size = new System.Drawing.Size(159, 33);
             this.btnGerarDetalhamento.TabIndex = 19;
@@ -333,25 +309,11 @@
             this.btnGerarDetalhamento.UseVisualStyleBackColor = true;
             this.btnGerarDetalhamento.Click += new System.EventHandler(this.btnGerarDetalhamento_Click);
             // 
-            // flpValorProventos
-            // 
-            this.flpValorProventos.Controls.Add(this.lblValorSalarioBase);
-            this.flpValorProventos.Controls.Add(this.lblValorAdicionalPericulosidade);
-            this.flpValorProventos.Controls.Add(this.lblValorAdicionalNoturno);
-            this.flpValorProventos.Controls.Add(this.lblValorHoraExtra);
-            this.flpValorProventos.Controls.Add(this.lblValorFgts);
-            this.flpValorProventos.Controls.Add(this.lblValorTotalProventos);
-            this.flpValorProventos.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpValorProventos.Location = new System.Drawing.Point(198, 73);
-            this.flpValorProventos.Name = "flpValorProventos";
-            this.flpValorProventos.Size = new System.Drawing.Size(128, 98);
-            this.flpValorProventos.TabIndex = 20;
-            // 
             // lblValorSalarioBase
             // 
             this.lblValorSalarioBase.AutoSize = true;
             this.lblValorSalarioBase.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorSalarioBase.Location = new System.Drawing.Point(20, 0);
+            this.lblValorSalarioBase.Location = new System.Drawing.Point(3, 0);
             this.lblValorSalarioBase.Name = "lblValorSalarioBase";
             this.lblValorSalarioBase.Size = new System.Drawing.Size(105, 15);
             this.lblValorSalarioBase.TabIndex = 5;
@@ -362,7 +324,7 @@
             // 
             this.lblValorAdicionalPericulosidade.AutoSize = true;
             this.lblValorAdicionalPericulosidade.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorAdicionalPericulosidade.Location = new System.Drawing.Point(35, 15);
+            this.lblValorAdicionalPericulosidade.Location = new System.Drawing.Point(3, 15);
             this.lblValorAdicionalPericulosidade.Name = "lblValorAdicionalPericulosidade";
             this.lblValorAdicionalPericulosidade.Size = new System.Drawing.Size(90, 15);
             this.lblValorAdicionalPericulosidade.TabIndex = 6;
@@ -373,7 +335,7 @@
             // 
             this.lblValorAdicionalNoturno.AutoSize = true;
             this.lblValorAdicionalNoturno.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorAdicionalNoturno.Location = new System.Drawing.Point(32, 30);
+            this.lblValorAdicionalNoturno.Location = new System.Drawing.Point(3, 30);
             this.lblValorAdicionalNoturno.Name = "lblValorAdicionalNoturno";
             this.lblValorAdicionalNoturno.Size = new System.Drawing.Size(93, 15);
             this.lblValorAdicionalNoturno.TabIndex = 7;
@@ -384,7 +346,7 @@
             // 
             this.lblValorHoraExtra.AutoSize = true;
             this.lblValorHoraExtra.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorHoraExtra.Location = new System.Drawing.Point(27, 45);
+            this.lblValorHoraExtra.Location = new System.Drawing.Point(3, 45);
             this.lblValorHoraExtra.Name = "lblValorHoraExtra";
             this.lblValorHoraExtra.Size = new System.Drawing.Size(98, 15);
             this.lblValorHoraExtra.TabIndex = 8;
@@ -395,7 +357,7 @@
             // 
             this.lblValorFgts.AutoSize = true;
             this.lblValorFgts.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorFgts.Location = new System.Drawing.Point(57, 60);
+            this.lblValorFgts.Location = new System.Drawing.Point(3, 60);
             this.lblValorFgts.Name = "lblValorFgts";
             this.lblValorFgts.Size = new System.Drawing.Size(68, 15);
             this.lblValorFgts.TabIndex = 23;
@@ -406,7 +368,7 @@
             // 
             this.lblValorTotalProventos.AutoSize = true;
             this.lblValorTotalProventos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorTotalProventos.Location = new System.Drawing.Point(39, 75);
+            this.lblValorTotalProventos.Location = new System.Drawing.Point(3, 75);
             this.lblValorTotalProventos.Name = "lblValorTotalProventos";
             this.lblValorTotalProventos.Size = new System.Drawing.Size(86, 15);
             this.lblValorTotalProventos.TabIndex = 24;
@@ -425,19 +387,40 @@
             this.pnlDetalhamento.Controls.Add(this.flpTotal);
             this.pnlDetalhamento.Controls.Add(this.flpDescontos);
             this.pnlDetalhamento.Controls.Add(this.flpValorProventos);
-            this.pnlDetalhamento.Location = new System.Drawing.Point(535, 51);
+            this.pnlDetalhamento.Location = new System.Drawing.Point(535, 34);
             this.pnlDetalhamento.Name = "pnlDetalhamento";
             this.pnlDetalhamento.Size = new System.Drawing.Size(330, 314);
             this.pnlDetalhamento.TabIndex = 21;
             // 
+            // lblDetalhamento
+            // 
+            this.lblDetalhamento.AutoSize = true;
+            this.lblDetalhamento.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDetalhamento.Location = new System.Drawing.Point(85, 13);
+            this.lblDetalhamento.Name = "lblDetalhamento";
+            this.lblDetalhamento.Size = new System.Drawing.Size(182, 30);
+            this.lblDetalhamento.TabIndex = 23;
+            this.lblDetalhamento.Text = "DETALHAMENTO";
+            // 
             // flpValorTotal
             // 
             this.flpValorTotal.Controls.Add(this.lblValorSalarioLiquido);
-            this.flpValorTotal.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flpValorTotal.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flpValorTotal.Location = new System.Drawing.Point(198, 289);
             this.flpValorTotal.Name = "flpValorTotal";
             this.flpValorTotal.Size = new System.Drawing.Size(128, 21);
             this.flpValorTotal.TabIndex = 22;
+            // 
+            // lblValorSalarioLiquido
+            // 
+            this.lblValorSalarioLiquido.AutoSize = true;
+            this.lblValorSalarioLiquido.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorSalarioLiquido.Location = new System.Drawing.Point(3, 0);
+            this.lblValorSalarioLiquido.Name = "lblValorSalarioLiquido";
+            this.lblValorSalarioLiquido.Size = new System.Drawing.Size(77, 15);
+            this.lblValorSalarioLiquido.TabIndex = 29;
+            this.lblValorSalarioLiquido.Text = "lblValorSalLiq";
+            this.lblValorSalarioLiquido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblTotal
             // 
@@ -449,23 +432,11 @@
             this.lblTotal.TabIndex = 21;
             this.lblTotal.Text = "Total:";
             // 
-            // flpValorDescontos
-            // 
-            this.flpValorDescontos.Controls.Add(this.lblValorIrff);
-            this.flpValorDescontos.Controls.Add(this.lblValorInss);
-            this.flpValorDescontos.Controls.Add(this.lblValorValeTransporte);
-            this.flpValorDescontos.Controls.Add(this.lblValorTotalDeDescontos);
-            this.flpValorDescontos.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flpValorDescontos.Location = new System.Drawing.Point(198, 202);
-            this.flpValorDescontos.Name = "flpValorDescontos";
-            this.flpValorDescontos.Size = new System.Drawing.Size(128, 65);
-            this.flpValorDescontos.TabIndex = 21;
-            // 
             // lblValorIrff
             // 
             this.lblValorIrff.AutoSize = true;
             this.lblValorIrff.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorIrff.Location = new System.Drawing.Point(64, 0);
+            this.lblValorIrff.Location = new System.Drawing.Point(3, 0);
             this.lblValorIrff.Name = "lblValorIrff";
             this.lblValorIrff.Size = new System.Drawing.Size(61, 15);
             this.lblValorIrff.TabIndex = 25;
@@ -476,7 +447,7 @@
             // 
             this.lblValorInss.AutoSize = true;
             this.lblValorInss.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorInss.Location = new System.Drawing.Point(59, 15);
+            this.lblValorInss.Location = new System.Drawing.Point(3, 15);
             this.lblValorInss.Name = "lblValorInss";
             this.lblValorInss.Size = new System.Drawing.Size(66, 15);
             this.lblValorInss.TabIndex = 26;
@@ -487,7 +458,7 @@
             // 
             this.lblValorValeTransporte.AutoSize = true;
             this.lblValorValeTransporte.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorValeTransporte.Location = new System.Drawing.Point(57, 30);
+            this.lblValorValeTransporte.Location = new System.Drawing.Point(3, 30);
             this.lblValorValeTransporte.Name = "lblValorValeTransporte";
             this.lblValorValeTransporte.Size = new System.Drawing.Size(68, 15);
             this.lblValorValeTransporte.TabIndex = 27;
@@ -498,7 +469,7 @@
             // 
             this.lblValorTotalDeDescontos.AutoSize = true;
             this.lblValorTotalDeDescontos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorTotalDeDescontos.Location = new System.Drawing.Point(38, 45);
+            this.lblValorTotalDeDescontos.Location = new System.Drawing.Point(3, 45);
             this.lblValorTotalDeDescontos.Name = "lblValorTotalDeDescontos";
             this.lblValorTotalDeDescontos.Size = new System.Drawing.Size(87, 15);
             this.lblValorTotalDeDescontos.TabIndex = 28;
@@ -595,7 +566,7 @@
             // 
             this.lblFezHoraExtra.AutoSize = true;
             this.lblFezHoraExtra.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFezHoraExtra.Location = new System.Drawing.Point(22, 281);
+            this.lblFezHoraExtra.Location = new System.Drawing.Point(22, 231);
             this.lblFezHoraExtra.Name = "lblFezHoraExtra";
             this.lblFezHoraExtra.Size = new System.Drawing.Size(97, 17);
             this.lblFezHoraExtra.TabIndex = 24;
@@ -608,15 +579,16 @@
             this.cmbFezHoraExtra.Items.AddRange(new object[] {
             "Não",
             "Sim"});
-            this.cmbFezHoraExtra.Location = new System.Drawing.Point(25, 301);
+            this.cmbFezHoraExtra.Location = new System.Drawing.Point(25, 251);
             this.cmbFezHoraExtra.Name = "cmbFezHoraExtra";
             this.cmbFezHoraExtra.Size = new System.Drawing.Size(121, 25);
             this.cmbFezHoraExtra.TabIndex = 25;
+            this.cmbFezHoraExtra.SelectedIndexChanged += new System.EventHandler(this.cmbFezHoraExtra_SelectedIndexChanged);
             // 
             // txtHoraExtra
             // 
             this.txtHoraExtra.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoraExtra.Location = new System.Drawing.Point(44, 350);
+            this.txtHoraExtra.Location = new System.Drawing.Point(44, 300);
             this.txtHoraExtra.Name = "txtHoraExtra";
             this.txtHoraExtra.Size = new System.Drawing.Size(130, 25);
             this.txtHoraExtra.TabIndex = 23;
@@ -625,38 +597,44 @@
             // 
             this.lblHoraExtra.AutoSize = true;
             this.lblHoraExtra.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraExtra.Location = new System.Drawing.Point(41, 329);
+            this.lblHoraExtra.Location = new System.Drawing.Point(41, 279);
             this.lblHoraExtra.Name = "lblHoraExtra";
             this.lblHoraExtra.Size = new System.Drawing.Size(155, 17);
             this.lblHoraExtra.TabIndex = 22;
             this.lblHoraExtra.Text = "Horas extras trabalhadas";
             // 
-            // lblValorSalarioLiquido
+            // flpValorDescontos
             // 
-            this.lblValorSalarioLiquido.AutoSize = true;
-            this.lblValorSalarioLiquido.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorSalarioLiquido.Location = new System.Drawing.Point(48, 0);
-            this.lblValorSalarioLiquido.Name = "lblValorSalarioLiquido";
-            this.lblValorSalarioLiquido.Size = new System.Drawing.Size(77, 15);
-            this.lblValorSalarioLiquido.TabIndex = 29;
-            this.lblValorSalarioLiquido.Text = "lblValorSalLiq";
-            this.lblValorSalarioLiquido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.flpValorDescontos.Controls.Add(this.lblValorIrff);
+            this.flpValorDescontos.Controls.Add(this.lblValorInss);
+            this.flpValorDescontos.Controls.Add(this.lblValorValeTransporte);
+            this.flpValorDescontos.Controls.Add(this.lblValorTotalDeDescontos);
+            this.flpValorDescontos.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpValorDescontos.Location = new System.Drawing.Point(216, 202);
+            this.flpValorDescontos.Name = "flpValorDescontos";
+            this.flpValorDescontos.Size = new System.Drawing.Size(95, 65);
+            this.flpValorDescontos.TabIndex = 21;
             // 
-            // lblDetalhamento
+            // flpValorProventos
             // 
-            this.lblDetalhamento.AutoSize = true;
-            this.lblDetalhamento.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetalhamento.Location = new System.Drawing.Point(85, 13);
-            this.lblDetalhamento.Name = "lblDetalhamento";
-            this.lblDetalhamento.Size = new System.Drawing.Size(182, 30);
-            this.lblDetalhamento.TabIndex = 23;
-            this.lblDetalhamento.Text = "DETALHAMENTO";
+            this.flpValorProventos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flpValorProventos.Controls.Add(this.lblValorSalarioBase);
+            this.flpValorProventos.Controls.Add(this.lblValorAdicionalPericulosidade);
+            this.flpValorProventos.Controls.Add(this.lblValorAdicionalNoturno);
+            this.flpValorProventos.Controls.Add(this.lblValorHoraExtra);
+            this.flpValorProventos.Controls.Add(this.lblValorFgts);
+            this.flpValorProventos.Controls.Add(this.lblValorTotalProventos);
+            this.flpValorProventos.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpValorProventos.Location = new System.Drawing.Point(215, 73);
+            this.flpValorProventos.Name = "flpValorProventos";
+            this.flpValorProventos.Size = new System.Drawing.Size(111, 98);
+            this.flpValorProventos.TabIndex = 20;
             // 
             // frmDetalhamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(877, 457);
+            this.ClientSize = new System.Drawing.Size(877, 416);
             this.Controls.Add(this.lblFezHoraExtra);
             this.Controls.Add(this.cmbFezHoraExtra);
             this.Controls.Add(this.txtHoraExtra);
@@ -667,8 +645,6 @@
             this.Controls.Add(this.lblTrabalhaQuantasHoras);
             this.Controls.Add(this.cmbTemDescontoValeTransporte);
             this.Controls.Add(this.lblTemDescontoValeTransporte);
-            this.Controls.Add(this.lblTrabalhaAPenasANoite);
-            this.Controls.Add(this.cmbTrabalhaAPenasANoite);
             this.Controls.Add(this.txtHorasNoturnas);
             this.Controls.Add(this.lblHorasNoturnas);
             this.Controls.Add(this.cmbRecebePericulosidade);
@@ -684,18 +660,18 @@
             this.Load += new System.EventHandler(this.frmDetalhamento_Load);
             this.flpProventos.ResumeLayout(false);
             this.flpProventos.PerformLayout();
-            this.flpValorProventos.ResumeLayout(false);
-            this.flpValorProventos.PerformLayout();
             this.pnlDetalhamento.ResumeLayout(false);
             this.pnlDetalhamento.PerformLayout();
             this.flpValorTotal.ResumeLayout(false);
             this.flpValorTotal.PerformLayout();
-            this.flpValorDescontos.ResumeLayout(false);
-            this.flpValorDescontos.PerformLayout();
             this.flpTotal.ResumeLayout(false);
             this.flpTotal.PerformLayout();
             this.flpDescontos.ResumeLayout(false);
             this.flpDescontos.PerformLayout();
+            this.flpValorDescontos.ResumeLayout(false);
+            this.flpValorDescontos.PerformLayout();
+            this.flpValorProventos.ResumeLayout(false);
+            this.flpValorProventos.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -711,8 +687,6 @@
         private System.Windows.Forms.TextBox txtHorasNoturnas;
         private System.Windows.Forms.ComboBox cmbRecebePericulosidade;
         private System.Windows.Forms.Label lblRecebePericulosidade;
-        private System.Windows.Forms.ComboBox cmbTrabalhaAPenasANoite;
-        private System.Windows.Forms.Label lblTrabalhaAPenasANoite;
         private System.Windows.Forms.ComboBox cmbTemDescontoValeTransporte;
         private System.Windows.Forms.Label lblTemDescontoValeTransporte;
         private System.Windows.Forms.TextBox txtTrabalhaQuantasHoras;
@@ -721,7 +695,6 @@
         private System.Windows.Forms.Label lblProventos;
         private System.Windows.Forms.Label lblSalarioBaseDetalhamento;
         private System.Windows.Forms.Button btnGerarDetalhamento;
-        private System.Windows.Forms.FlowLayoutPanel flpValorProventos;
         private System.Windows.Forms.Panel pnlDetalhamento;
         private System.Windows.Forms.Label lblAdicionalPericulosidade;
         private System.Windows.Forms.Label lblAdicionalNoturno;
@@ -736,7 +709,6 @@
         private System.Windows.Forms.Label lblValorTotalProventos;
         private System.Windows.Forms.FlowLayoutPanel flpValorTotal;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.FlowLayoutPanel flpValorDescontos;
         private System.Windows.Forms.Label lblValorIrff;
         private System.Windows.Forms.Label lblValorInss;
         private System.Windows.Forms.Label lblValorValeTransporte;
@@ -755,5 +727,7 @@
         private System.Windows.Forms.Label lblHoraExtra;
         private System.Windows.Forms.Label lblDetalhamento;
         private System.Windows.Forms.Label lblValorSalarioLiquido;
+        private System.Windows.Forms.FlowLayoutPanel flpValorDescontos;
+        private System.Windows.Forms.FlowLayoutPanel flpValorProventos;
     }
 }
