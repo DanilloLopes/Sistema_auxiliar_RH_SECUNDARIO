@@ -32,6 +32,7 @@ namespace iRh.Windows.Simuladores
             if(cmbRecebeAdicionalNoturno.SelectedIndex == 0)
             {
                 txtHorasNoturnas.Enabled = false;
+                txtHorasNoturnas.Clear();
                 return;
             }
             if(cmbRecebeAdicionalNoturno.SelectedIndex == 1)
@@ -45,6 +46,7 @@ namespace iRh.Windows.Simuladores
             if(cmbFezHoraExtra.SelectedIndex == 0)
             {
                 txtHoraExtra.Enabled = false;
+                txtHoraExtra.Clear();
                 return;
             }
             if(cmbFezHoraExtra.SelectedIndex == 1)

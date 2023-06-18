@@ -12,7 +12,7 @@ namespace iRh.Windows.Core
         {
             double valorDaHoraTrabalhada = salario / horasTrabalhas;
             double valorDaHoraExtraTrabalhada = valorDaHoraTrabalhada * 2;
-            double valorAdicionalHoraExtra = valorDaHoraExtraTrabalhada * horasTrabalhas;
+            double valorAdicionalHoraExtra = valorDaHoraExtraTrabalhada * horasExtrasTrabalhadas;
 
             return valorAdicionalHoraExtra;
         }

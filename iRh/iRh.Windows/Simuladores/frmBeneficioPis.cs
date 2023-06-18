@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iRh.Windows.Core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace iRh.Windows.Simuladores
         public frmBeneficioPis()
         {
             InitializeComponent();
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSalarioBase.Text))
+            {
+                MessageBox.Show("Informe seu salário base", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSalarioBase.Focus();
+                return;
+            }
+            
         }
     }
 }

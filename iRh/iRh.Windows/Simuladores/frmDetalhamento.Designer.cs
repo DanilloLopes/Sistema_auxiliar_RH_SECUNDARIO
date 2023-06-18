@@ -60,6 +60,7 @@
             this.flpValorTotal = new System.Windows.Forms.FlowLayoutPanel();
             this.lblValorSalarioLiquido = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.flpValorDescontos = new System.Windows.Forms.FlowLayoutPanel();
             this.lblValorIrff = new System.Windows.Forms.Label();
             this.lblValorInss = new System.Windows.Forms.Label();
             this.lblValorValeTransporte = new System.Windows.Forms.Label();
@@ -72,18 +73,17 @@
             this.lblInss = new System.Windows.Forms.Label();
             this.lblValeTransporte = new System.Windows.Forms.Label();
             this.lblTotalDescontos = new System.Windows.Forms.Label();
+            this.flpValorProventos = new System.Windows.Forms.FlowLayoutPanel();
             this.lblFezHoraExtra = new System.Windows.Forms.Label();
             this.cmbFezHoraExtra = new System.Windows.Forms.ComboBox();
             this.txtHoraExtra = new System.Windows.Forms.TextBox();
             this.lblHoraExtra = new System.Windows.Forms.Label();
-            this.flpValorDescontos = new System.Windows.Forms.FlowLayoutPanel();
-            this.flpValorProventos = new System.Windows.Forms.FlowLayoutPanel();
             this.flpProventos.SuspendLayout();
             this.pnlDetalhamento.SuspendLayout();
             this.flpValorTotal.SuspendLayout();
+            this.flpValorDescontos.SuspendLayout();
             this.flpTotal.SuspendLayout();
             this.flpDescontos.SuspendLayout();
-            this.flpValorDescontos.SuspendLayout();
             this.flpValorProventos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -432,6 +432,18 @@
             this.lblTotal.TabIndex = 21;
             this.lblTotal.Text = "Total:";
             // 
+            // flpValorDescontos
+            // 
+            this.flpValorDescontos.Controls.Add(this.lblValorIrff);
+            this.flpValorDescontos.Controls.Add(this.lblValorInss);
+            this.flpValorDescontos.Controls.Add(this.lblValorValeTransporte);
+            this.flpValorDescontos.Controls.Add(this.lblValorTotalDeDescontos);
+            this.flpValorDescontos.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpValorDescontos.Location = new System.Drawing.Point(216, 202);
+            this.flpValorDescontos.Name = "flpValorDescontos";
+            this.flpValorDescontos.Size = new System.Drawing.Size(95, 65);
+            this.flpValorDescontos.TabIndex = 21;
+            // 
             // lblValorIrff
             // 
             this.lblValorIrff.AutoSize = true;
@@ -562,6 +574,21 @@
             this.lblTotalDescontos.Text = "TOTAL DE DESCONTOS";
             this.lblTotalDescontos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // flpValorProventos
+            // 
+            this.flpValorProventos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flpValorProventos.Controls.Add(this.lblValorSalarioBase);
+            this.flpValorProventos.Controls.Add(this.lblValorAdicionalPericulosidade);
+            this.flpValorProventos.Controls.Add(this.lblValorAdicionalNoturno);
+            this.flpValorProventos.Controls.Add(this.lblValorHoraExtra);
+            this.flpValorProventos.Controls.Add(this.lblValorFgts);
+            this.flpValorProventos.Controls.Add(this.lblValorTotalProventos);
+            this.flpValorProventos.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpValorProventos.Location = new System.Drawing.Point(215, 73);
+            this.flpValorProventos.Name = "flpValorProventos";
+            this.flpValorProventos.Size = new System.Drawing.Size(111, 98);
+            this.flpValorProventos.TabIndex = 20;
+            // 
             // lblFezHoraExtra
             // 
             this.lblFezHoraExtra.AutoSize = true;
@@ -603,33 +630,6 @@
             this.lblHoraExtra.TabIndex = 22;
             this.lblHoraExtra.Text = "Horas extras trabalhadas";
             // 
-            // flpValorDescontos
-            // 
-            this.flpValorDescontos.Controls.Add(this.lblValorIrff);
-            this.flpValorDescontos.Controls.Add(this.lblValorInss);
-            this.flpValorDescontos.Controls.Add(this.lblValorValeTransporte);
-            this.flpValorDescontos.Controls.Add(this.lblValorTotalDeDescontos);
-            this.flpValorDescontos.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpValorDescontos.Location = new System.Drawing.Point(216, 202);
-            this.flpValorDescontos.Name = "flpValorDescontos";
-            this.flpValorDescontos.Size = new System.Drawing.Size(95, 65);
-            this.flpValorDescontos.TabIndex = 21;
-            // 
-            // flpValorProventos
-            // 
-            this.flpValorProventos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flpValorProventos.Controls.Add(this.lblValorSalarioBase);
-            this.flpValorProventos.Controls.Add(this.lblValorAdicionalPericulosidade);
-            this.flpValorProventos.Controls.Add(this.lblValorAdicionalNoturno);
-            this.flpValorProventos.Controls.Add(this.lblValorHoraExtra);
-            this.flpValorProventos.Controls.Add(this.lblValorFgts);
-            this.flpValorProventos.Controls.Add(this.lblValorTotalProventos);
-            this.flpValorProventos.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpValorProventos.Location = new System.Drawing.Point(215, 73);
-            this.flpValorProventos.Name = "flpValorProventos";
-            this.flpValorProventos.Size = new System.Drawing.Size(111, 98);
-            this.flpValorProventos.TabIndex = 20;
-            // 
             // frmDetalhamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -656,7 +656,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "frmDetalhamento";
-            this.Text = "frmDetalhamento";
+            this.Text = "Detalhamento Contracheque";
             this.Load += new System.EventHandler(this.frmDetalhamento_Load);
             this.flpProventos.ResumeLayout(false);
             this.flpProventos.PerformLayout();
@@ -664,12 +664,12 @@
             this.pnlDetalhamento.PerformLayout();
             this.flpValorTotal.ResumeLayout(false);
             this.flpValorTotal.PerformLayout();
+            this.flpValorDescontos.ResumeLayout(false);
+            this.flpValorDescontos.PerformLayout();
             this.flpTotal.ResumeLayout(false);
             this.flpTotal.PerformLayout();
             this.flpDescontos.ResumeLayout(false);
             this.flpDescontos.PerformLayout();
-            this.flpValorDescontos.ResumeLayout(false);
-            this.flpValorDescontos.PerformLayout();
             this.flpValorProventos.ResumeLayout(false);
             this.flpValorProventos.PerformLayout();
             this.ResumeLayout(false);

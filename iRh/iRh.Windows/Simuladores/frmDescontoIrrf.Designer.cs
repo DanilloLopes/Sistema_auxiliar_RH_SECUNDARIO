@@ -96,7 +96,7 @@
             this.Controls.Add(this.bntCalcularIrrf);
             this.MaximizeBox = false;
             this.Name = "frmDescontoIrrf";
-            this.Text = "frmDescontoIrrf";
+            this.Text = "Desconto IRRF";
             this.panelResultadoIrrf.ResumeLayout(false);
             this.panelResultadoIrrf.PerformLayout();
             this.ResumeLayout(false);
