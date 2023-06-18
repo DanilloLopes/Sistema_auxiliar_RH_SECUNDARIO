@@ -129,12 +129,12 @@ namespace iRh.Windows.Simuladores
                 lblValorAdicionalPericulosidade.Text = valorPericulosidade.ToString("C");
                 lblValorFgts.Text = valorFgts.ToString("C");
                 lblValorHoraExtra.Text = valorHoraExtra.ToString("C");
-                lblTotalProventos.Text = totalDeProventos.ToString("C");
+                lblValorTotalProventos.Text = totalDeProventos.ToString("C");
 
                 lblValorIrff.Text = valorIrrf.ToString("C");
                 lblValorInss.Text = valorInss.ToString("C");
                 lblValorValeTransporte.Text = valorValeTransporte.ToString("C");
-                lblTotalDescontos.Text = totalDeDescontos.ToString("C");
+                lblValorTotalDeDescontos.Text = totalDeDescontos.ToString("C");
 
                 lblValorSalarioLiquido.Text = salarioLiquido.ToString("C");
 
